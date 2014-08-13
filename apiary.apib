@@ -858,7 +858,7 @@ EMEA requests
             ]
         }
 
-## GLOBAL REQUEST PER TYPE  [/statistic?region=1&group=4]
+## EMEA REQUEST PER TYPE  [/statistic?region=1&group=4]
 EMEA requests
 
 ### Retrieve a GLOBAL request per type [GET]
@@ -966,4 +966,20 @@ EMEA requests
             ]
         }
 
+## ONBOARD REQUESTS [/requests]
+Onboard requests
 
+### Retrieve a onboard requests (for dashboard) [GET]
++ Response 200 (application/json)
+
+        [
+            {
+                "requestID" : "RQ000001",
+                "requestState" : "Submitted",
+                "requestType" : "NewClient",
+                "clientName" : "Exxon Mobile",
+                "country" : "Canada",
+                "assignee" : "James B",
+                "creationDate" : 3451234234234
+            }
+        ]

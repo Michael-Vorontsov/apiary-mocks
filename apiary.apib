@@ -1424,3 +1424,58 @@ Onboard requests
                 "creationDate" : 1407421551,
             },
          ]
+
+
+## GLOBAL REQUEST PER STATE  [/statistic?region=1&group=2]
+EMEA requests
+
+### Retrieve a GLOBAL request per type [GET]
++ Response 200 (application/json)
+ 
+        {
+            "region" : 1,
+            "requests" :
+            [
+              {
+                "type": "New",
+                "count": 123
+              },
+              {
+                "type": "Assigned",
+                "count": 211
+              },
+              {
+                "type": "In progress",
+                "count": 1231
+              },
+            ]
+        }
+
+## GLOBAL REQUEST PER USER Group  [/statistic?region=1&group=3]
+EMEA requests
+
+### Retrieve a GLOBAL request per type [GET]
++ Response 200 (application/json)
+ 
+        {
+            "region" : 1,
+            "requests" :
+            [
+              {
+                "type": "COE Team",
+                "count": 50
+              },
+              {
+                "type": "ASU",
+                "count": 211
+              },
+              {
+                "type": "DOC Specialist",
+                "count": 1231
+              },
+              {
+                "type": "Country/Hub",
+                "count": 0
+              },
+            ]
+        }

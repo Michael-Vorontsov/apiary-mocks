@@ -1933,3 +1933,47 @@ Onboard requests
             },
          ]
 
+## ONBOARD REQUEST 1 Details [/requests&requestID=1]
+Onboard request details
+
+### Retrieve a onboard requests for dashboard [GET]
++ Response 200 (application/json)
+
+        {
+            "initiator" : "Eileen McEnroe",
+            "requestSummary" : "Some reuqest summary"
+            "managementSummary" : "Some reuqest summary \n management details shoud be there"
+        }
+        
+## ONBOARD REQUEST 2 Details [/requests&requestID=2]
+Onboard request details
+
+### Retrieve a onboard requests for dashboard [GET]
++ Response 200 (application/json)
+
+        {
+            "initiator" : "Jacqueline  Cascardi",
+        }
+        
+## ONBOARD REQUEST 3 Details [/requests&requestID=3]
+Onboard request details
+
+### Retrieve a onboard requests for dashboard [GET]
++ Response 200 (application/json)
+
+        {
+            "initiator" : "Oleksii Matiash",
+            "comments" :
+                [
+                    {
+                        "author" : " "Mykhailo Vorontsov",
+                        "message" : "Hello World!",
+                        "date" : 1407767151,
+                    },
+                    {
+                        "author" : "Tetiana Zavialova",
+                        "message" : "Hello",
+                        "date" : 1407752451,
+                    },
+                ]
+        }        

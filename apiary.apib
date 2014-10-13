@@ -2759,4 +2759,35 @@ GLOBAL requests
             "office" : "Citibank N.A. Vietnam\n115 Nguyen Hue Blvd.,15th Floor\nDistrict 1, Ho Chi Minh City\nVietnam"
         }
         ]
+## ROUTING PAGE QUESTION 1 [/routing]
+Routing page questions
+
+### Retrieve a onboard requests for dashboard [GET]
++ Response 200 (application/json)
+
+        {
+            “questionCode” : 1,
+            “questionText” : “Where do you live?”,
+            “questionType:” : “dropdown”,
+            “answers” : 
+                [
+                    {
+                        “answerCode” : 1,
+                        “answerText” : “Ukraine”
+                    },
+                    {
+                        “answerCode” : 2,
+                        “answerText” : “Poland”
+                    },
+                    {
+                        “answerCode” : 3,
+                        “answerText” : “USA”
+                    },
+                    {
+                        “answerCode” : 4,
+                        “answerText” : “UK”
+                    },
+                ],
+            “defaultAnswer” : 1
+        }        
         

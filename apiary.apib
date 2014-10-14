@@ -2764,32 +2764,61 @@ GLOBAL requests
 ## ROUTING PAGE QUESTION 1 [/routing]
 Routing page questions
 
-### Retrieve a onboard requests for dashboard [GET]
+### Retrieve routing page question 1 for dashboard [GET]
 + Response 200 (application/json)
 
-        {
-            "questionCode" : "q1",
-            "questionText" : "Where do you live?",
-            "questionType" : "dropdown",
-            "answers" : 
-                [
-                    {
-                        "answerCode" : "a1",
-                        "answerText" : "Ukraine"
-                    },
-                    {
-                        "answerCode" : "a2",
-                        "answerText" : "Poland"
-                    },
-                    {
-                        "answerCode" : "a3",
-                        "answerText" : "USA"
-                    },
-                    {
-                        "answerCode" : "a4",
-                        "answerText" : "UK"
-                    },
-                ],
-            "defaultAnswer" : "a1"
-        }        
+        [
+
+            "com.citi.ddi.omc.routing.rest.api.QuestionnaireResponse",
+            {
+                "value": "ICG Markets",
+                "questionCode": "Q1",
+                "questionText": "Which business or service area am I part of?",
+                "questionType": "DROPDOWN",
+                "required": true,
+                "answers": [
+                    "java.util.LinkedList",
+                    [
+                        [
+                            "com.citi.cop.routing.core.model.DynamicLookup$LookupResult",
+                            {
+                                "name": "ICG Banking",
+                                "displayName": "ICG Banking",
+                                "extensions": [
+                                    "java.util.LinkedHashMap",
+                                    {
+                                        "routingpage": "Not Markets"
+                                    }
+                                ]
+                            }
+                        ],
+                        [
+                            "com.citi.cop.routing.core.model.DynamicLookup$LookupResult",
+                            {
+                                "name": "ICG Treasury and Trade Solutions",
+                                "displayName": "ICG Treasury and Trade Solutions",
+                                "extensions": [
+                                    "java.util.LinkedHashMap",
+                                    {
+                                        "routingpage": "Not Markets"
+                                    }
+                                ]
+                            }
+                        ],
+                        [
+                            "com.citi.cop.routing.core.model.DynamicLookup$LookupResult",
+                            {
+                                "name": "ICG Markets",
+                                "displayName": "ICG Markets",
+                                "extensions": [
+                                    "java.util.LinkedHashMap",
+                                    { }
+                                ]
+                            }
+                        ]
+                    ]
+                ]
+            }
+        ]
+       
         

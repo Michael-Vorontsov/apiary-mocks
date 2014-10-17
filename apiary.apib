@@ -2820,6 +2820,67 @@ Routing page questions
                 ]
             }
         ]
+        
+        
+## ROUTING PAGE ANSWEARS WITH SEACH 1 [/answearsWithSearch]
+Routing page questions
+
+### Retrieve routing page question 1 for dashboard [GET]
++ Response 200 (application/json)
+
+        [
+
+            "com.citi.ddi.omc.routing.rest.api.QuestionnaireResponse",
+            {
+                "value": "ICG Markets",
+                "questionCode": "Q1",
+                "questionText": "Which business or service area am I part of?",
+                "questionType": "QUESTIONWITHSEARCH",
+                "required": true,
+                "answers": [
+                    "java.util.LinkedList",
+                    [
+                        [
+                            "com.citi.cop.routing.core.model.DynamicLookup$LookupResult",
+                            {
+                                "name": "ICG Banking1",
+                                "displayName": "ICG Banking",
+                                "extensions": [
+                                    "java.util.LinkedHashMap",
+                                    {
+                                        "routingpage": "Not Markets"
+                                    }
+                                ]
+                            }
+                        ],
+                        [
+                            "com.citi.cop.routing.core.model.DynamicLookup$LookupResult",
+                            {
+                                "name": "ICG Treasury and Trade Solutions",
+                                "displayName": "ICG Treasury and Trade Solutions1",
+                                "extensions": [
+                                    "java.util.LinkedHashMap",
+                                    {
+                                        "routingpage": "Not Markets"
+                                    }
+                                ]
+                            }
+                        ],
+                        [
+                            "com.citi.cop.routing.core.model.DynamicLookup$LookupResult",
+                            {
+                                "name": "ICG Markets",
+                                "displayName": "ICG Markets1",
+                                "extensions": [
+                                    "java.util.LinkedHashMap",
+                                    { }
+                                ]
+                            }
+                        ]
+                    ]
+                ]
+            }
+        ]
        
 ## ROUTING PAGE HEADER 1 [/external-ws/rest/api/v1/resource/WELCOME_TEXT]
 Routing page Header

@@ -7,6 +7,73 @@ Notes API is a *short texts saving* service similar to its physical paper presen
 # Group Notes
 Notes related resources of the **Notes API**
 
+## HELP WHOo TOO CALL [/helphowtoocall]
+### List all Notes [GET]
++ Response 200 (application/json)
+
+        [
+            {"identifier" : 1,
+            "name" : "question1",
+            "regions" : 
+            [
+                {
+                    "identifier" : 1,
+                    "name" : "region 2",
+                    "contacts" : { "mail" : "mail1@citi.com", "tel" : 1234567}
+                },
+                {
+                    "identifier" : 2,
+                    "name" : "region 2",
+                    "contacts" : { "mail" : "mail2@citi.com", "tel" : 1234567}
+                },
+                {
+                    "identifier" : 3,
+                    "name" : "region 3",
+                    "contacts" : { "mail" : "mail3@citi.com", "tel" : 1234567}
+                }
+            ]},
+            {"identifier" : 2,
+            "name" : "question32",
+            "regions" : 
+            [
+                {
+                    "identifier" : 4,
+                    "name" : "region 4",
+                    "contacts" : { "mail" : "mail1@citi.com", "tel" : 1234567}
+                },
+                {
+                    "identifier" : 5,
+                    "name" : "region 5",
+                    "contacts" : { "mail" : "mail2@citi.com", "tel" : 1234567}
+                },
+                {
+                    "identifier" : 6,
+                    "name" : "region 6",
+                    "contacts" : { "mail" : "mail3@citi.com", "tel" : 1234567}
+                }
+            ]},
+            {"identifier" : 3,
+            "name" : "question1",
+            "regions" : 
+            [
+                {
+                    "identifier" : 7,
+                    "name" : "region 7",
+                    "contacts" : { "mail" : "mail1@citi.com", "tel" : 1234567}
+                },
+                {
+                    "identifier" : 8,
+                    "name" : "region 8",
+                    "contacts" : { "mail" : "mail2@citi.com", "tel" : 1234567}
+                },
+                {
+                    "identifier" : 9,
+                    "name" : "region 9",
+                    "contacts" : { "mail" : "mail3@citi.com", "tel" : 1234567}
+                }
+            ]},
+                
+
 ## Global Regions [/regions]
 ### List all Notes [GET]
 + Response 200 (application/json)

@@ -279,8 +279,34 @@ Notes related resources of the **Notes API**
             ],
             "crmLink" : "",
             "instructionCode" : "",
-            "questionCode" : "Q2",
+            "questionCode" : "Q4",
             "questionText" : "What do you want to ask about?",
+            "questionType" : "DROPDOWN",
+            "required" : 1,
+            "templateCode" : "",
+            "value" : ""
+        }
+
+## HELP Request a call [/requestacall{?soeId,Q1,Q2,Q3}&Q4=open]
+### Request a call [GET]
++ Response 200 (application/json)
+    
+        {
+            "answers" : 
+            [
+                {
+                    "displayName" : "Account openning",
+                    "name" : "open"
+                },
+                        {
+                    "displayName" : "Account close",
+                    "name" : "close"
+                }
+            ],
+            "crmLink" : "",
+            "instructionCode" : "",
+            "questionCode" : "Q5",
+            "questionText" : "Details",
             "questionType" : "INPUTTEXT",
             "required" : 1,
             "templateCode" : "",

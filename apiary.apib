@@ -313,6 +313,33 @@ Notes related resources of the **Notes API**
             "value" : ""
         }
 
+## HELP Request a call [/requestacall{?soeId,Q1,Q2,Q3}&Q4=close]
+### Request a call [GET]
++ Response 200 (application/json)
+    
+        {
+            "answers" : 
+            [
+                {
+                    "displayName" : "Account openning",
+                    "name" : "open"
+                },
+                        {
+                    "displayName" : "Account close",
+                    "name" : "close"
+                }
+            ],
+            "crmLink" : "",
+            "instructionCode" : "",
+            "questionCode" : "Q5",
+            "questionText" : "Details1",
+            "questionType" : "INPUTTEXT",
+            "required" : 1,
+            "templateCode" : "",
+            "value" : ""
+        }
+
+
 
 ## HELP FAQ [/FAQ]
 ### List all Notes [GET]

@@ -229,98 +229,130 @@ Notes related resources of the **Notes API**
 
         }
 
+## HELP Request a call [/requestacall{?soeId,Q1}]
+### Request a call [GET]
++ Response 200 (application/json)
+    
+        {
+            "answers" : [],
+            "crmLink" : "",
+            "instructionCode" : "",
+            "questionCode" : "Q2",
+            "questionText" : "What is your name?",
+            "questionType" : "INPUTTEXT",
+            "required" : 1,
+            "templateCode" : "",
+            "value" : ""
+        }
+
+## HELP Request a call [/requestacall{?soeId,Q1,Q2}]
+### Request a call [GET]
++ Response 200 (application/json)
+    
+        {
+            "answers" : [],
+            "crmLink" : "",
+            "instructionCode" : "",
+            "questionCode" : "Q2",
+            "questionText" : "What is your phone number?",
+            "questionType" : "INPUTTEXT",
+            "required" : 1,
+            "templateCode" : "",
+            "value" : ""
+        }
+
 
 ## HELP FAQ [/FAQ]
 ### List all Notes [GET]
 + Response 200 (application/json)
 
-[
-    {
-       "identifier" : "1",
-        "question" : "What are the file types and maximum size allowed for the supporting documents?",
-        "details" : "<html><body><p>You will be able to upload the following types of files: PDF, doc, xls, CSV, PPT, rtf, msg, tiff, jpg, jpeg and gif. The file size can be up to 5 MB for supporting documents</p></body></html>"
-    },
-    {
-       "identifier" : "2",
-        "question" : "What actions can I perform in Account Management?",
-        "details" : "<html><body><p>You can perform Modify Accounts, Close Accounts, and Open Accounts</p></body></html>"
-    },
-    {
-       "identifier" : "3",
-        "question" : "How are account numbers assigned?",
-        "details" : "<html><body><p>When you submit an account opening request in eBAM, Citi operations initially may issue a reserved account number for the request and communicate back to you offline. Once the account request is fulfilled, eBAM is updated with the account number</p></body></html>"
-    },
-        {
-       "identifier" : "4",
-        "question" : "Can I have the same account name in the same Branch with the same currency?",
-        "details" : "<html><body><p>Yes, but each one will need to have a different account number</p></body></html>"
-    },
-        {
-       "identifier" : "5",
-        "question" : "How many accounts can I associate to one billing address?",
-        "details" : "<html><body><p>Currently, there is no limit to the number of accounts that you can associate to a billing address</p></body></html>"
-    },
-        {
-       "identifier" : "6",
-        "question" : "How many characters can I use in an account name?",
-        "details" : "<html><body><p>195 characters</p></body></html>"
-    },
-        {
-       "identifier" : "7",
-        "question" : "Are there any documents I need to provide when assigning a Designated Authorizer?",
-        "details" : "<html><body><p>Yes, they are a part of the document checklist for Designated Authorizer assignment</p></body></html>"
-    },
-        {
-       "identifier" : "8",
-        "question" : "What happens when I delete an Operating Signer from an account?",
-        "details" : "<html><body><p>Deleting an Operating Signer from an account is the same as un-assigning a signer from an account. Select the Operating Signer for an account and un-assign him/her from that account by clicking the un-assign button</p></body></html>"
-    },
-        {
-       "identifier" : "9",
-        "question" : "Can I add multiple Operating Signers to multiple Accounts at the same time?",
-        "details" : "<html><body><p>Yes, you can add multiple Operating Signers to multiple Accounts at the same time</p></body></html>"
-    },
-        {
-       "identifier" : "10",
-        "question" : "If a request is submitted to assign 20 Operating Signers to one account, how many requests will need to be approved?",
-        "details" : "<html><body><p>If the Operating Signer assignment for this account is submitted via one request, the Designated Authorizer will only need to approve one request</p></body></html>"
-    },
-        {
-       "identifier" : "11",
-        "question" : "During Signature Card setup, is ink signing a PDF and/or uploading the Signature Card a onetime activity?",
-        "details" : "<html><body><p>Signature Card setup is a onetime activity performed during Implementation. Any changes to the user name and/or signature should be treated as a new Operating Signer and will require a new Signature Card</p></body></html>"
-    },
-        {
-       "identifier" : "12",
-        "question" : "How I can verify the status of the Signature Card set up process?",
-        "details" : "<html><body><p>You can use the status on the dashboard to see when the signature card is submitted, approved/rejected, completed</p></body></html>"
-    },
-        {
-       "identifier" : "13",
-        "question" : "Can there be multiple users selected for the Signature Card set up at a time?",
-        "details" : "<html><body><p>No, you would need to set up one user at a time</p></body></html>"
-    },         
-        {
-       "identifier" : "14",
-        "question" : "Who approves the Signature Card setup request?",
-        "details" : "<html><body><p>The Security Officer will approve the Signature Card setup request</p></body></html>"
-    }, 
-        {
-       "identifier" : "15",
-        "question" : "Can I approve my own request?",
-        "details" : "<html><body><p>No, you cannot approve a request that you have initiated</p></body></html>"
-    },
-        {
-       "identifier" : "16",
-        "question" : "What is a MIFT Signer?",
-        "details" : "<html><body><p>A Manually Initiated Funds Transfer (Contingency) Signer is a designated signer assigned to an account(s) and is authorized to manually instruct Citi to move funds from this account</p></body></html>"
-    },
-        {
-       "identifier" : "17",
-        "question" : "What is a Call Back Nominee?",
-        "details" : "<html><body><p>A Call Back Nominee is a person associated with a MIFT Signer. He/she is designated for confirmation of a MIFT Payment instructions initiated by a MIFT Signer to whom he/she is assigned as a Nominee</p></body></html>"
-    }            
-]
+        [
+            {
+               "identifier" : "1",
+                "question" : "What are the file types and maximum size allowed for the supporting documents?",
+                "details" : "<html><body><p>You will be able to upload the following types of files: PDF, doc, xls, CSV, PPT, rtf, msg, tiff, jpg, jpeg and gif. The file size can be up to 5 MB for supporting documents</p></body></html>"
+            },
+            {
+               "identifier" : "2",
+                "question" : "What actions can I perform in Account Management?",
+                "details" : "<html><body><p>You can perform Modify Accounts, Close Accounts, and Open Accounts</p></body></html>"
+            },
+            {
+               "identifier" : "3",
+                "question" : "How are account numbers assigned?",
+                "details" : "<html><body><p>When you submit an account opening request in eBAM, Citi operations initially may issue a reserved account number for the request and communicate back to you offline. Once the account request is fulfilled, eBAM is updated with the account number</p></body></html>"
+            },
+                {
+               "identifier" : "4",
+                "question" : "Can I have the same account name in the same Branch with the same currency?",
+                "details" : "<html><body><p>Yes, but each one will need to have a different account number</p></body></html>"
+            },
+                {
+               "identifier" : "5",
+                "question" : "How many accounts can I associate to one billing address?",
+                "details" : "<html><body><p>Currently, there is no limit to the number of accounts that you can associate to a billing address</p></body></html>"
+            },
+                {
+               "identifier" : "6",
+                "question" : "How many characters can I use in an account name?",
+                "details" : "<html><body><p>195 characters</p></body></html>"
+            },
+                {
+               "identifier" : "7",
+                "question" : "Are there any documents I need to provide when assigning a Designated Authorizer?",
+                "details" : "<html><body><p>Yes, they are a part of the document checklist for Designated Authorizer assignment</p></body></html>"
+            },
+                {
+               "identifier" : "8",
+                "question" : "What happens when I delete an Operating Signer from an account?",
+                "details" : "<html><body><p>Deleting an Operating Signer from an account is the same as un-assigning a signer from an account. Select the Operating Signer for an account and un-assign him/her from that account by clicking the un-assign button</p></body></html>"
+            },
+                {
+               "identifier" : "9",
+                "question" : "Can I add multiple Operating Signers to multiple Accounts at the same time?",
+                "details" : "<html><body><p>Yes, you can add multiple Operating Signers to multiple Accounts at the same time</p></body></html>"
+            },
+                {
+               "identifier" : "10",
+                "question" : "If a request is submitted to assign 20 Operating Signers to one account, how many requests will need to be approved?",
+                "details" : "<html><body><p>If the Operating Signer assignment for this account is submitted via one request, the Designated Authorizer will only need to approve one request</p></body></html>"
+            },
+                {
+               "identifier" : "11",
+                "question" : "During Signature Card setup, is ink signing a PDF and/or uploading the Signature Card a onetime activity?",
+                "details" : "<html><body><p>Signature Card setup is a onetime activity performed during Implementation. Any changes to the user name and/or signature should be treated as a new Operating Signer and will require a new Signature Card</p></body></html>"
+            },
+                {
+               "identifier" : "12",
+                "question" : "How I can verify the status of the Signature Card set up process?",
+                "details" : "<html><body><p>You can use the status on the dashboard to see when the signature card is submitted, approved/rejected, completed</p></body></html>"
+            },
+                {
+               "identifier" : "13",
+                "question" : "Can there be multiple users selected for the Signature Card set up at a time?",
+                "details" : "<html><body><p>No, you would need to set up one user at a time</p></body></html>"
+            },         
+                {
+               "identifier" : "14",
+                "question" : "Who approves the Signature Card setup request?",
+                "details" : "<html><body><p>The Security Officer will approve the Signature Card setup request</p></body></html>"
+            }, 
+                {
+               "identifier" : "15",
+                "question" : "Can I approve my own request?",
+                "details" : "<html><body><p>No, you cannot approve a request that you have initiated</p></body></html>"
+            },
+                {
+               "identifier" : "16",
+                "question" : "What is a MIFT Signer?",
+                "details" : "<html><body><p>A Manually Initiated Funds Transfer (Contingency) Signer is a designated signer assigned to an account(s) and is authorized to manually instruct Citi to move funds from this account</p></body></html>"
+            },
+                {
+               "identifier" : "17",
+                "question" : "What is a Call Back Nominee?",
+                "details" : "<html><body><p>A Call Back Nominee is a person associated with a MIFT Signer. He/she is designated for confirmation of a MIFT Payment instructions initiated by a MIFT Signer to whom he/she is assigned as a Nominee</p></body></html>"
+            }            
+        ]
         
 ## HELP Procedure [/procedure]
 ### List all Notes [GET]

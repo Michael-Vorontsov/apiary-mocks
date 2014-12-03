@@ -683,27 +683,19 @@ Notes related resources of the **Notes API**
             "value" : ""
         }
 
-## HELP Request a call [/requestacall{?soeId,Q1,Q2,Q3}&Q4=open]
+## HELP Request a call [/requestacall{?soeId,Q1,Q2,Q3,Q4}]
 ### Request a call [GET]
 + Response 200 (application/json)
     
         {
             "answers" : 
             [
-                {
-                    "displayName" : "details 3",
-                    "name" : "details 3"
-                },
-                        {
-                    "displayName" : "details 4",
-                    "name" : "details 4"
-                }
             ],
             "crmLink" : "",
             "instructionCode" : "",
             "questionCode" : "Q5",
             "questionText" : "Details",
-            "questionType" : "DROPDOWN",
+            "questionType" : "INPUTTEXT",
             "required" : 1,
             "templateCode" : "",
             "value" : ""
@@ -716,52 +708,16 @@ Notes related resources of the **Notes API**
         {
             "answers" : 
             [
-                {
-                    "displayName" : "details 1",
-                    "name" : "details 1"
-                },
-                        {
-                    "displayName" : "details 2",
-                    "name" : "details 2"
-                }
             ],
             "crmLink" : "1",
             "instructionCode" : "1",
             "questionCode" : "Q5",
-            "questionText" : "Details1",
-            "questionType" : "DROPDOWN",
+            "questionText" : "Details",
+            "questionType" : "INPUTTEXT",
             "required" : 1,
             "templateCode" : "1",
             "value" : ""
         }
-
-## HELP Request a call [/requestacall{?soeId,Q1,Q2,Q3}&Q4=close]
-### Request a call [GET]
-+ Response 200 (application/json)
-    
-        {
-            "answers" : 
-            [
-                {
-                    "displayName" : "details 1",
-                    "name" : "details 1"
-                },
-                        {
-                    "displayName" : "details 2",
-                    "name" : "details 2"
-                }
-            ],
-            "crmLink" : "",
-            "instructionCode" : "",
-            "questionCode" : "Q5",
-            "questionText" : "Details1",
-            "questionType" : "DROPDOWN",
-            "required" : 1,
-            "templateCode" : "",
-            "value" : ""
-        }
-
-
 
 ## HELP FAQ [/FAQ]
 ### List all Notes [GET]

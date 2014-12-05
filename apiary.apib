@@ -11,6 +11,19 @@ Notes related resources of the **Notes API**
 ### SURVEY [GET]
 + Response 200 (application/json)
 
+        [{
+            "answers" : 
+            [
+            ],
+            "crmLink" : "",
+            "instructionCode" : "",
+            "questionCode" : "Q0",
+            "questionText" : "Please, tell us about your expirience using Citi self-service application.",
+            "questionType" : "TEXT",
+            "required" : 1,
+            "templateCode" : "",
+            "value" : ""
+        },
         {
             "answers" : [
                         {
@@ -40,7 +53,7 @@ Notes related resources of the **Notes API**
                 "questionType" : "DROPDOWN",
                 "required" : 1,
                 "templateCode" : "",
-        }
+        }]
         
 ## HELP SURVEY  [/SURVEY{?soeId,Q1}]
 ### SURVEY [GET]
@@ -362,36 +375,53 @@ Notes related resources of the **Notes API**
 + Response 200 (application/json)
 
         {
-            "answers" : [
-                        {
-                    "displayName" : "Strongly agree",
-                    "name" : "Strongly agree"
-                },
-                        {
-                    "displayName" : "Agree",
-                    "name" : "Agree"
-                },
-                        {
-                    "displayName" : "Neutral",
-                    "name" : "Neutral"
-                },
-                        {
-                    "displayName" : "Disagree",
-                    "name" : "Disagree"
-                },
-                        {
-                    "displayName" : "Strongly disagree",
-                    "name" : "Strongly disagree"
-                }],
-                 "crmLink" : "1",
-                "instructionCode" : "1",
-                "questionCode" : "Q10",
-                "questionText" : "I need to learn a lot of things before I could get going with this app",
-                "questionType" : "DROPDOWN",
-                "required" : 1,
-                "templateCode" : "1",
+            "answers" : [],
+            "crmLink" : "",
+            "instructionCode" : "",
+            "questionCode" : "Q11",
+            "questionText" : "Submit",
+            "questionType" : "BUTTON",
+            "required" : 1,
+            "templateCode" : "",
         }
 
+## HELP SURVEY  [/SURVEY{?soeId,Q1,Q2,Q3,Q4,Q5,Q6,Q7,Q8,Q9,Q10,Q11}]
+### Request a call [GET]
++ Response 200 (application/json)
+
+        [{
+            "answers" : 
+            [
+            ],
+            "crmLink" : "",
+            "instructionCode" : "",
+            "questionCode" : "Q12",
+            "questionText" : "Thank you for taking the time to fill out the survey.\n\n Do you want to take new?",
+            "questionType" : "TEXT",
+            "required" : 1,
+            "templateCode" : "",
+            "value" : ""
+        },
+        {
+            "answers" : 
+            [
+            ],
+            "crmLink" : "",
+            "instructionCode" : "",
+            "questionCode" : "Q13",
+            "questionText" : "Take the Survey Again",
+            "questionType" : "BUTTON",
+            "required" : 1,
+            "templateCode" : "",
+            "value" : ""
+        }]
+        
+## HELP SURVEY  [/SURVEY{?soeId,Q13}]
+### Request a call [GET]
++ Response 200 (application/json)
+
+        []        
+        
 ## HELP Request a call [/requestacall{?soeId}]
 ### Request a call [GET]
 + Response 200 (application/json)

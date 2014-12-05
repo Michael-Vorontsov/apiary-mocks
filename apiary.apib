@@ -815,15 +815,54 @@ Notes related resources of the **Notes API**
             "answers" : 
             [
             ],
-            "crmLink" : "1",
-            "instructionCode" : "1",
-            "questionCode" : "Q6",
-            "questionText" : "Details",
-            "questionType" : "INPUTDETAILS",
+            "crmLink" : "",
+            "instructionCode" : "",
+            "questionCode" : "Q7",
+            "questionText" : "Request a Call",
+            "questionType" : "BUTTON",
             "required" : 1,
-            "templateCode" : "1",
+            "templateCode" : "",
             "value" : ""
         }
+
+## HELP Request a call [/requestacall{?soeId,Q1,Q2,Q3,Q4,Q5,Q6,Q7}]
+### Request a call [GET]
++ Response 200 (application/json)
+    
+        [{
+            "answers" : 
+            [
+            ],
+            "crmLink" : "",
+            "instructionCode" : "",
+            "questionCode" : "Q8",
+            "questionText" : "@"Thank you.\nYour call request has been processed.\nWe are now arranging for a lending specialist to call you back at the time selected. We look forward to talking to you. Do you want to request a new call?"",
+            "questionType" : "INPUTTEXT",
+            "required" : 1,
+            "templateCode" : "",
+            "value" : ""
+        },
+        {
+            "answers" : 
+            [
+            ],
+            "crmLink" : "",
+            "instructionCode" : "",
+            "questionCode" : "Q9",
+            "questionText" : "@"Request Another Call",
+            "questionType" : "BUTTON",
+            "required" : 1,
+            "templateCode" : "",
+            "value" : ""
+        }
+        ]
+
+## HELP Request a call [/requestacall{?soeId,Q8,Q9}]
+### Request a call [GET]
++ Response 200 (application/json)
+    
+        [
+        ]
 
 ## HELP FAQ [/FAQ]
 ### List all Notes [GET]

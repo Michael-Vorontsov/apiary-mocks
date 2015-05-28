@@ -28,7 +28,7 @@ Notes related resources of the **Notes API**
             "crmLink" : "",
             "instructionCode" : "",
             "questionCode" : "Q0",
-            "questionText" : "Please, tell us about your experience using CustomerBank self-service application.",
+            "questionText" : "Please, tell us about your expirience using Citi self-service application.",
             "questionType" : "TEXT",
             "required" : 1,
             "templateCode" : "",
@@ -969,7 +969,7 @@ Notes related resources of the **Notes API**
             {
                "identifier" : "3",
                 "question" : "How are account numbers assigned?",
-                "details" : "<html></head><body><p>When you submit an account opening request in Account management system, operations initially may issue a reserved account number for the request and communicate back to you offline.</p></body></html>"
+                "details" : "<html></head><body><p>When you submit an account opening request in eBAM, Citi operations initially may issue a reserved account number for the request and communicate back to you offline. Once the account request is fulfilled, eBAM is updated with the account number</p></body></html>"
             },
                 {
                "identifier" : "4",
@@ -988,8 +988,8 @@ Notes related resources of the **Notes API**
             },
                 {
                "identifier" : "7",
-                "question" : "Are there any documents I need to provide when assigning a Authorizer?",
-                "details" : "<html></head><body><p>Yes, they are a part of the document checklist for Authorizer assignment</p></body></html>"
+                "question" : "Are there any documents I need to provide when assigning a Designated Authorizer?",
+                "details" : "<html></head><body><p>Yes, they are a part of the document checklist for Designated Authorizer assignment</p></body></html>"
             },
                 {
                "identifier" : "8",
@@ -1004,7 +1004,7 @@ Notes related resources of the **Notes API**
                 {
                "identifier" : "10",
                 "question" : "If a request is submitted to assign 20 Operating Signers to one account, how many requests will need to be approved?",
-                "details" : "<html></head><body><p>If the Operating Signer assignment for this account is submitted via one request, the  Authorizer will only need to approve one request</p></body></html>"
+                "details" : "<html></head><body><p>If the Operating Signer assignment for this account is submitted via one request, the Designated Authorizer will only need to approve one request</p></body></html>"
             },
                 {
                "identifier" : "11",
@@ -1034,7 +1034,12 @@ Notes related resources of the **Notes API**
                 {
                "identifier" : "16",
                 "question" : "What is a MIFT Signer?",
-                "details" : "<html></head><body><p>A Manually Initiated Funds Transfer (Contingency) Signer is a signer assigned to an account(s) and is authorized to manually instruct CustomerBank to move funds from this account</p></body></html>"
+                "details" : "<html></head><body><p>A Manually Initiated Funds Transfer (Contingency) Signer is a designated signer assigned to an account(s) and is authorized to manually instruct Citi to move funds from this account</p></body></html>"
+            },
+                {
+               "identifier" : "17",
+                "question" : "What is a Call Back Nominee?",
+                "details" : "<html></head><body><p>A Call Back Nominee is a person associated with a MIFT Signer. He/she is designated for confirmation of a MIFT Payment instructions initiated by a MIFT Signer to whom he/she is assigned as a Nominee</p></body></html>"
             }            
         ]
         
@@ -1045,8 +1050,13 @@ Notes related resources of the **Notes API**
         [
             {
                "identifier" : "100",
-                "question" : "Know your customer",
-                "details" : "<html></head> <body> <h4>Know your customer</h4><p><div><b>Know your customer (KYC)</b> is the process of a business verifying the identity of its clients. The term is also used to refer to the bank regulation which governs these activities. Know your customer processes are also employed by companies of all sizes for the purpose of ensuring their proposed agents&#39;, consultants&#39; or distributors&#39; anti-bribery compliance. Banks, insurers and export credit agencies are increasingly demanding that customers provide detailed anti-corruption due diligence information, to verify their probity and integrity.</div><div>&nbsp;</div><div>Know your customer policies are becoming much more important globally to prevent identity theft, financial fraud, money laundering and terrorist financing.</div><div>&nbsp;</div><div><b>Standards</b></div><div>The objective of KYC guidelines is to prevent banks from being used, intentionally or unintentionally, by criminal elements for money laundering activities. Related procedures also enable banks to better understand their customers and their financial dealings. This helps them manage their risks prudently. Banks usually frame their KYC policies incorporating the following four key elements:</div><div>&nbsp;</div><ul><li>Customer Policy;</li><li>Customer Identification Procedures;</li><li>Monitoring of Transactions; and</li><li>Risk management.</li></ul><div>For the purposes of a KYC policy, a Customer/user may be defined as:</div><div>&nbsp;</div><ul><li>a person or entity that maintains an account and/or has a business relationship with the bank;</li><li>one on whose behalf the account is maintained (i.e. the beneficial owner);</li><li>beneficiaries of transactions conducted by professional intermediaries such as stockbrokers, Chartered Accountants, or solicitors, as permitted under the law; or</li><li>any person or entity connected with a financial transaction which can pose significant reputational or other risks to the bank&mdash;i.e., a wire transfer or issue of a high-value demand draft as a single transaction.</li></ul></body></html>"
+                "question" : "Procedures for Opening a Legal Entity",
+                "details" : "<html></head> <body> <h4>Procedures for Opening a Legal Entity:</h4><p>1.    U.S. Equities Middle Office (MO) will obtain the completed 5944A Form (blank available at http://cibnacompliance.nj.ssmb.com/data/pdf/aml_cm_5944mggpform.pdf) from Sales / Sales Trader and forward the Form to Accounts Control.  Form 5944A requires, among other information: name of Legal Entity; primary business address; tax i.d.; country of formation; customer class/line of business (Customer Classification Code); salesperson’s name and signature; and supervisor’s name and signature (registered principal).</br></br>2.    Accounts Control will review the 5944A Form to ensure that all required fields are completed and will input the data into e-Sales. </br></br>3.    IF THE LEGAL ENTITY IS CANADIAN DOMICILED AND WILL BE TRADING CANADIAN EQUITY SECURITIES, then MO will obtain the completed “CGMCI –Equity Institutional Trading - KYC” Form (see attachment) from Sales / Sales Trader and forward the Form to Canada Compliance, along with a copy of the completed Form 5944A. </br></br>4.    Canada Compliance will review the CGMCI –Equity Institutional Trading – KYC Form to ensure that all required fields are completed, coordinate the signing of the form by the Ultimate Designated Person (“UDP”) as well as Chief Compliance Officer, and keep the form on file.</p><h4>For AML High Risk Entities</h4><p>1. Certain entities are deemed “AML high risk” based either on Customer Classification Code (e.g. casino/gaming establishments) and/or country location (e.g., Saudi Arabia).  For AML high risk entities, Customer identification Program (“CIP”) requirements must be satisfied prior to the opening of a Legal Entity by Accounts Control.</br></br>2. To satisfy CIP requirements, MO will obtain the completed AML approved verification document(s) from Sales/ Sales Trader and forward the document(s) to Accounts Control.  A list of the types of AML approved verification documents is available at http://cibnacompliance.nj.ssmb.com/data/pdf/VerificationMatrix_04.pdf.</br></br>e-Sales logic will block the opening of a new Legal Entity that has a high risk Customer Classification Code and/or a high risk country code until AML Compliance approves the opening of the Legal Entity and CIP is satisfied.</p><h4>For AML Low/Medium Risk Entities</h4><p>1. To satisfy CIP requirements, MO will obtain the completed AML approved verification document(s) from Sales/ Sales Trader and forward the document(s) to Accounts Control.</br></br>2. If documentation is not received within 30 days then the Legal Entity and all linked sub-accounts will be restricted. </body></html>"
+            },
+            {
+               "identifier" : "120",
+                "question" : "Procedures for Opening a Sub-Account",
+                "details" : "<html></head><body><h4>Procedures for Opening a Sub-Account:</h4><p> 1.    If necessary, Middle Office (MO) will obtain the following documents and forward to Accounts Control:</br></br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;a.    The Foreign Shell Bank Certification, only if the account is a foreign bank.</br></br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;b.    Form 5485/SIA 151 – Executing Broker Agreement.  This is a CGMI requirement which is required for all accounts that clear through domestic or international prime brokerage houses if Citigroup is acting as the executing broker.</br></br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;c.    Additional documents may be required depending upon the account that is being opened (e.g., option account, margin account, etc.).</br></br>2.    For 01 (CGMI Salomon platform) and 09 (CGMCI platform) accounts, the new account (aka mnemonic) is user created. For OA (CGMI Smith Barney platform) accounts, the new account (aka CPI Account) is system generated based upon the branch entered.</br></br>3.    MO will add all relevant data into the Customer General Screen (GP, Mgmt Group, LE, Fund/sub-account name, Address, Sales ID/FC info, etc.).</br></br>4.    MO will add all relevant Settlement instructions via the SSI Screen.</br></br>5.    MO will add ALERT Cross Reference info (when applicable) via the International Screen.</br></br>6.    MO will add any cross reference info via the ETC Screen (Oasys, Oasys Global, FIX, etc)</br></br>7.    MO will add any further pre-confirmation information on the US/Intl Telex/Fax screen (Fax or email confirms).</br></br>8.    Once complete, account is created in e-Sales and Form 5410 is sent electronically to the Series 8/24 for electronic approval.</br></br>9. For new 09 (CGMCI platform) sub-accounts, MO will confirm with Canada Compliance that a CCMCI-Equity Institutional Trading-KYC Form (see attachment) is on file with Canada Compliance.  If not on file, then MO will obtain the completed CGMCI –Equity Institutional Trading – KYC Form from Sales / Sales Trader and forward the Form to Canada Compliance, along with a copy of the completed Form 5944A.  Canada Compliance will review the CGMCI –Equity Institutional Trading – KYC Form to ensure that all required fields are completed, coordinate the signing of the form by the UDP as well as Chief Compliance Officer, and keep the form on file.</p></body></html>"
             }
         ]
 
@@ -1062,22 +1072,22 @@ Notes related resources of the **Notes API**
                 {
                     "identifier" : "1",
                     "name" : "North America",
-                    "contacts" : { "Email" : "us.client.onboarding@customerbank.com ", "Tel." : "+1 212-1111-1111 (1111)", "Tel. " : "+1 111-111-1111"}
+                    "contacts" : { "Email" : "us.client.onboarding@citi.com ", "Tel." : "+1 212-723-CCOB (2262)", "Tel. " : "+1 877-296-2801"}
                 },
                 {
                     "identifier" : "2",
                     "name" : "Europe",
-                    "contacts" : { "Email" : "eu.client.onboarding@customerbank.com ", "Tel." : "+22 222-222-2222 (2222) "}
+                    "contacts" : { "Email" : "eu.client.onboarding@citi.com ", "Tel." : "+44 207-986-CCOB (2262) "}
                 },
                 {
                     "identifier" : "3",
                     "name" : "Asia Pacific",
-                    "contacts" : { "Email" : "apac.client.onboarding@customerbank.com", "Tel." : "+333-3333-3333 (3333)", "Tel. " : "+333-333-3333"}
+                    "contacts" : { "Email" : "apac.client.onboarding@citi.com", "Tel." : "+852-2501-CCOB (2262)", "Tel. " : "+852-2300-0278"}
                 },
                 {
                     "identifier" : "4",
                     "name" : "North America Prime Brokerage",
-                    "contacts" : { "Email " : "us.prime.onboarding@customerbank.com ", "Email" : "us.futures.onboarding@customerbank.com", "Tel" : "+1 444-444-4444"}
+                    "contacts" : { "Email " : "us.prime.onboarding@citi.com ", "Email" : "us.futures.onboarding@citi.com", "Tel" : "+1 877-296-2801"}
                 }
             ]}
         ]
@@ -2301,8 +2311,8 @@ GLOBAL requests
 + Response 200 (application/json)
 
         {
-            "contact" : "John Smith\n john.smith@customerbank.com\n 11-11-111-11",
-            "office" : "CustomerBank \n Sample str.\n  34212, milano",
+            "contact" : "Renzo Arconia\n renzo.arconia@city.com\n 39-27-128-89",
+            "office" : "CItiBank N.A.\n via merachanti\n  34212, milano",
         }
 
 ## GLOBAL REQUEST PER TYPE  [/statistic?region=0&group=1]
@@ -2323,11 +2333,11 @@ GLOBAL requests
                 "count": 213
               },
               {
-                "type": " Account Management ",
+                "type": "eBAM Changes",
                 "count": 392
               },
               {
-                "type": "Entitlements Set Up",
+                "type": "CitiDirect Entitlements",
                 "count": 12
               },
               {
@@ -2381,11 +2391,11 @@ EMEA requests
                 "count": 211
               },
               {
-                "type": " Account Management ",
+                "type": "eBAM Changes",
                 "count": 1231
               },
               {
-                "type": "Entitlements Set Up",
+                "type": "CitiDirect Entitlements",
                 "count": 0
               },
               {
@@ -2461,11 +2471,11 @@ EMEA requests
             "requests" :
             [
               {
-                "type": "Client Onboarding ",
+                "type": "COE Team",
                 "count": 50
               },
               {
-                "type": "Account Services",
+                "type": "ASU",
                 "count": 211
               },
               {
@@ -2491,97 +2501,97 @@ EMEA requests
             "requests" :
             [
               {
-                "year": 2014,
+                "year": 2013,
                 "month" : 1,
                 "count": 150
               },
               {
-                "year": 2014,
+                "year": 2013,
                 "month" : 2,
                 "count": 151
               },
               {
-                "year": 2014,
+                "year": 2013,
                 "month" : 3,
                 "count": 155
               },
               {
-                "year": 2014,
+                "year": 2013,
                 "month" : 4,
                 "count": 180
               },
               {
-                "year": 2014,
+                "year": 2013,
                 "month" : 5,
                 "count": 160
               },
               {
-                "year": 2014,
+                "year": 2013,
                 "month" : 6,
                 "count": 130
               },
               {
-                "year": 2014,
+                "year": 2013,
                 "month" : 7,
                 "count": 110
               },
               {
-                "year": 2014,
+                "year": 2013,
                 "month" : 8,
                 "count": 190
               },
               {
-                "year": 2014,
+                "year": 2013,
                 "month" : 9,
                 "count": 226
               },
               {
-                "year": 2014,
+                "year": 2013,
                 "month" : 10,
                 "count": 230
               },
               {
-                "year": 2014,
+                "year": 2013,
                 "month" : 11,
                 "count": 260
               },
               {
-                "year": 2014,
+                "year": 2013,
                 "month" : 12,
                 "count": 237
               },
               {
-                "year": 2015,
+                "year": 2014,
                 "month" : 1,
                 "count": 170
               },
               {
-                "year": 2015,
+                "year": 2014,
                 "month" : 2,
                 "count": 221
               },
               {
-                "year": 2015,
+                "year": 2014,
                 "month" : 3,
                 "count": 215
               },
               {
-                "year": 2015,
+                "year": 2014,
                 "month" : 4,
                 "count": 255
               },
               {
-                "year": 2015,
+                "year": 2014,
                 "month" : 5,
                 "count": 240
               },
               {
-                "year": 2015,
+                "year": 2014,
                 "month" : 6,
                 "count": 230
               },
               {
-                "year": 2015,
+                "year": 2014,
                 "month" : 7,
                 "count": 220
               },
@@ -2597,7 +2607,7 @@ Onboard requests
         [
             {
                 "requestID" : "RQ000001",
-                "assignee" : "Diana Fox",
+                "assignee" : "Jacqueline  Cascardi",
                 "clientName" : "Sun Life Financial",
                 "country" : "Germany",
                 "requestState" : "Assigned",
@@ -2606,7 +2616,7 @@ Onboard requests
             },
             {
                 "requestID" : "RQ000002",
-                "assignee" : "Jane Doe ",
+                "assignee" : "Eileen McEnroe",
                 "clientName" : "Xerox",
                 "country" : "USA",
                 "requestState" : "Submitted",
@@ -2615,7 +2625,7 @@ Onboard requests
             },
             {
                 "requestID" : "RQ000003",
-                "assignee" : "Jane Doe ",
+                "assignee" : "Eileen McEnroe",
                 "clientName" : "Xerox",
                 "country" : "Netherlands",
                 "requestState" : "Completed",
@@ -2624,7 +2634,7 @@ Onboard requests
             },
             {
                 "requestID" : "RQ000004",
-                "assignee" : "John Doe",
+                "assignee" : "Safronov Roman",
                 "clientName" : "AT&T",
                 "country" : "Italy",
                 "requestState" : "Submitted",
@@ -2633,7 +2643,7 @@ Onboard requests
             },
             {
                 "requestID" : "RQ000005",
-                "assignee" : "John Doe",
+                "assignee" : "Safronov Roman",
                 "clientName" : "Nokia",
                 "country" : "Italy",
                 "requestState" : "Draft",
@@ -2642,7 +2652,7 @@ Onboard requests
             },
             {
                 "requestID" : "RQ000006",
-                "assignee" : "Diana Fox",
+                "assignee" : "Jacqueline  Cascardi",
                 "clientName" : "AVON PRODUCTS INCORPORATED",
                 "country" : "United Kingdom",
                 "requestState" : "Submitted",
@@ -2651,7 +2661,7 @@ Onboard requests
             },
             {
                 "requestID" : "RQ000007",
-                "assignee" : "Diana Fox",
+                "assignee" : "Jacqueline  Cascardi",
                 "clientName" : "AT&T",
                 "country" : "Netherlands",
                 "requestState" : "Progress",
@@ -2660,7 +2670,7 @@ Onboard requests
             },
             {
                 "requestID" : "RQ000008",
-                "assignee" : "Diana Fox",
+                "assignee" : "Jacqueline  Cascardi",
                 "clientName" : "Arkema",
                 "country" : "Portugal",
                 "requestState" : "Completed",
@@ -2669,7 +2679,7 @@ Onboard requests
             },
             {
                 "requestID" : "RQ000009",
-                "assignee" : "Jane Doe ",
+                "assignee" : "Eileen McEnroe",
                 "clientName" : "INTERACTIVE BROKERS GROUP INCORPORATED",
                 "country" : "USA",
                 "requestState" : "Completed",
@@ -2678,7 +2688,7 @@ Onboard requests
             },
             {
                 "requestID" : "RQ000010",
-                "assignee" : "John Doe",
+                "assignee" : "Safronov Roman",
                 "clientName" : "Johnson & Johnson",
                 "country" : "Spain",
                 "requestState" : "Assigned",
@@ -2687,7 +2697,7 @@ Onboard requests
             },
             {
                 "requestID" : "RQ000011",
-                "assignee" : "John Doe",
+                "assignee" : "Safronov Roman",
                 "clientName" : "Sun Life Financial",
                 "country" : "Netherlands",
                 "requestState" : "Assigned",
@@ -2696,7 +2706,7 @@ Onboard requests
             },
             {
                 "requestID" : "RQ000012",
-                "assignee" : "Jane Roe",
+                "assignee" : "Nancy Desai",
                 "clientName" : "Arkema",
                 "country" : "Ireland",
                 "requestState" : "Submitted",
@@ -2705,7 +2715,7 @@ Onboard requests
             },
             {
                 "requestID" : "RQ000013",
-                "assignee" : "Diana Fox",
+                "assignee" : "Jacqueline  Cascardi",
                 "clientName" : "Sun Life Financial",
                 "country" : "Italy",
                 "requestState" : "Waiting",
@@ -2714,7 +2724,7 @@ Onboard requests
             },
             {
                 "requestID" : "RQ000014",
-                "assignee" : "John Roe",
+                "assignee" : "Denis Urusov",
                 "clientName" : "AVON PRODUCTS INCORPORATED",
                 "country" : "Italy",
                 "requestState" : "Waiting",
@@ -2723,7 +2733,7 @@ Onboard requests
             },
             {
                 "requestID" : "RQ000015",
-                "assignee" : "John Roe",
+                "assignee" : "Denis Urusov",
                 "clientName" : "Johnson & Johnson",
                 "country" : "Italy",
                 "requestState" : "Assigned",
@@ -2732,7 +2742,7 @@ Onboard requests
             },
             {
                 "requestID" : "RQ000016",
-                "assignee" : "Jane Doe ",
+                "assignee" : "Eileen McEnroe",
                 "clientName" : "Xerox",
                 "country" : "Germany",
                 "requestState" : "Waiting",
@@ -2741,7 +2751,7 @@ Onboard requests
             },
             {
                 "requestID" : "RQ000017",
-                "assignee" : "John Doe",
+                "assignee" : "Safronov Roman",
                 "clientName" : "Nokia",
                 "country" : "Denmark",
                 "requestState" : "Draft",
@@ -2750,7 +2760,7 @@ Onboard requests
             },
             {
                 "requestID" : "RQ000018",
-                "assignee" : "John Roe",
+                "assignee" : "Denis Urusov",
                 "clientName" : "Johnson & Johnson",
                 "country" : "Portugal",
                 "requestState" : "Assigned",
@@ -2759,7 +2769,7 @@ Onboard requests
             },
             {
                 "requestID" : "RQ000019",
-                "assignee" : "Jane Doe ",
+                "assignee" : "Eileen McEnroe",
                 "clientName" : "Computer Associates",
                 "country" : "Germany",
                 "requestState" : "Completed",
@@ -2768,7 +2778,7 @@ Onboard requests
             },
             {
                 "requestID" : "RQ000020",
-                "assignee" : "Jane Roe",
+                "assignee" : "Nancy Desai",
                 "clientName" : "Johnson & Johnson",
                 "country" : "Greece",
                 "requestState" : "Submitted",
@@ -2777,7 +2787,7 @@ Onboard requests
             },
             {
                 "requestID" : "RQ000021",
-                "assignee" : "Jane Doe ",
+                "assignee" : "Eileen McEnroe",
                 "clientName" : "AT&T",
                 "country" : "Ireland",
                 "requestState" : "Waiting",
@@ -2786,7 +2796,7 @@ Onboard requests
             },
             {
                 "requestID" : "RQ000022",
-                "assignee" : "John Roe",
+                "assignee" : "Denis Urusov",
                 "clientName" : "Sun Life Financial",
                 "country" : "Norway",
                 "requestState" : "Draft",
@@ -2795,7 +2805,7 @@ Onboard requests
             },
             {
                 "requestID" : "RQ000023",
-                "assignee" : "John Doe",
+                "assignee" : "Safronov Roman",
                 "clientName" : "AT&T",
                 "country" : "Belgium",
                 "requestState" : "Progress",
@@ -2804,7 +2814,7 @@ Onboard requests
             },
             {
                 "requestID" : "RQ000024",
-                "assignee" : "Jane Roe",
+                "assignee" : "Nancy Desai",
                 "clientName" : "AVON PRODUCTS INCORPORATED",
                 "country" : "Luxembourg",
                 "requestState" : "Progress",
@@ -2813,7 +2823,7 @@ Onboard requests
             },
             {
                 "requestID" : "RQ000025",
-                "assignee" : "John Doe",
+                "assignee" : "Safronov Roman",
                 "clientName" : "AVON PRODUCTS INCORPORATED",
                 "country" : "United Kingdom",
                 "requestState" : "Submitted",
@@ -2822,7 +2832,7 @@ Onboard requests
             },
             {
                 "requestID" : "RQ000026",
-                "assignee" : "John Smith",
+                "assignee" : "Oleksii Matiash",
                 "clientName" : "AT&T",
                 "country" : "Italy",
                 "requestState" : "Progress",
@@ -2831,7 +2841,7 @@ Onboard requests
             },
             {
                 "requestID" : "RQ000027",
-                "assignee" : "Diana Fox",
+                "assignee" : "Jacqueline  Cascardi",
                 "clientName" : "Johnson & Johnson",
                 "country" : "Belgium",
                 "requestState" : "Draft",
@@ -2840,7 +2850,7 @@ Onboard requests
             },
             {
                 "requestID" : "RQ000028",
-                "assignee" : "John Roe",
+                "assignee" : "Denis Urusov",
                 "clientName" : "Xerox",
                 "country" : "Austria",
                 "requestState" : "Waiting",
@@ -2849,7 +2859,7 @@ Onboard requests
             },
             {
                 "requestID" : "RQ000029",
-                "assignee" : "John Doe",
+                "assignee" : "Safronov Roman",
                 "clientName" : "Sun Life Financial",
                 "country" : "Luxembourg",
                 "requestState" : "Draft",
@@ -2858,7 +2868,7 @@ Onboard requests
             },
             {
                 "requestID" : "RQ000030",
-                "assignee" : "John Doe",
+                "assignee" : "Safronov Roman",
                 "clientName" : "Sun Life Financial",
                 "country" : "Luxembourg",
                 "requestState" : "Progress",
@@ -2867,7 +2877,7 @@ Onboard requests
             },
             {
                 "requestID" : "RQ000031",
-                "assignee" : "Diana Fox",
+                "assignee" : "Jacqueline  Cascardi",
                 "clientName" : "AT&T",
                 "country" : "Luxembourg",
                 "requestState" : "Progress",
@@ -2876,7 +2886,7 @@ Onboard requests
             },
             {
                 "requestID" : "RQ000032",
-                "assignee" : "John Doe",
+                "assignee" : "Safronov Roman",
                 "clientName" : "INTERACTIVE BROKERS GROUP INCORPORATED",
                 "country" : "Sweden",
                 "requestState" : "Waiting",
@@ -2885,7 +2895,7 @@ Onboard requests
             },
             {
                 "requestID" : "RQ000033",
-                "assignee" : "Diana Fox",
+                "assignee" : "Jacqueline  Cascardi",
                 "clientName" : "Computer Associates",
                 "country" : "Italy",
                 "requestState" : "Assigned",
@@ -2894,7 +2904,7 @@ Onboard requests
             },
             {
                 "requestID" : "RQ000034",
-                "assignee" : "Jane Roe",
+                "assignee" : "Nancy Desai",
                 "clientName" : "Computer Associates",
                 "country" : "Spain",
                 "requestState" : "Submitted",
@@ -2903,7 +2913,7 @@ Onboard requests
             },
             {
                 "requestID" : "RQ000035",
-                "assignee" : "Jane Doe ",
+                "assignee" : "Eileen McEnroe",
                 "clientName" : "Arkema",
                 "country" : "Jersey C.I.",
                 "requestState" : "Completed",
@@ -2912,7 +2922,7 @@ Onboard requests
             },
             {
                 "requestID" : "RQ000036",
-                "assignee" : "Jane Roe",
+                "assignee" : "Nancy Desai",
                 "clientName" : "INTERACTIVE BROKERS GROUP INCORPORATED",
                 "country" : "USA",
                 "requestState" : "Assigned",
@@ -2921,7 +2931,7 @@ Onboard requests
             },
             {
                 "requestID" : "RQ000037",
-                "assignee" : "Jane Doe ",
+                "assignee" : "Eileen McEnroe",
                 "clientName" : "Sun Life Financial",
                 "country" : "Jersey C.I.",
                 "requestState" : "Progress",
@@ -2930,7 +2940,7 @@ Onboard requests
             },
             {
                 "requestID" : "RQ000038",
-                "assignee" : "John Roe",
+                "assignee" : "Denis Urusov",
                 "clientName" : "Arkema",
                 "country" : "Finland",
                 "requestState" : "Submitted",
@@ -2939,7 +2949,7 @@ Onboard requests
             },
             {
                 "requestID" : "RQ000039",
-                "assignee" : "Jane Doe ",
+                "assignee" : "Eileen McEnroe",
                 "clientName" : "Sun Life Financial",
                 "country" : "France",
                 "requestState" : "Assigned",
@@ -2948,7 +2958,7 @@ Onboard requests
             },
             {
                 "requestID" : "RQ000040",
-                "assignee" : "John Roe",
+                "assignee" : "Denis Urusov",
                 "clientName" : "Nokia",
                 "country" : "Belgium",
                 "requestState" : "Progress",
@@ -2957,7 +2967,7 @@ Onboard requests
             },
             {
                 "requestID" : "RQ000041",
-                "assignee" : "John Smith",
+                "assignee" : "Oleksii Matiash",
                 "clientName" : "AT&T",
                 "country" : "Finland",
                 "requestState" : "Draft",
@@ -2966,7 +2976,7 @@ Onboard requests
             },
             {
                 "requestID" : "RQ000042",
-                "assignee" : "John Smith",
+                "assignee" : "Oleksii Matiash",
                 "clientName" : "INTERACTIVE BROKERS GROUP INCORPORATED",
                 "country" : "Netherlands",
                 "requestState" : "Progress",
@@ -2975,7 +2985,7 @@ Onboard requests
             },
             {
                 "requestID" : "RQ000043",
-                "assignee" : "Jane Doe ",
+                "assignee" : "Eileen McEnroe",
                 "clientName" : "Johnson & Johnson",
                 "country" : "Netherlands",
                 "requestState" : "Progress",
@@ -2984,7 +2994,7 @@ Onboard requests
             },
             {
                 "requestID" : "RQ000044",
-                "assignee" : "Jane Roe",
+                "assignee" : "Nancy Desai",
                 "clientName" : "AT&T",
                 "country" : "Germany",
                 "requestState" : "Submitted",
@@ -2993,7 +3003,7 @@ Onboard requests
             },
             {
                 "requestID" : "RQ000045",
-                "assignee" : "Diana Fox",
+                "assignee" : "Jacqueline  Cascardi",
                 "clientName" : "INTERACTIVE BROKERS GROUP INCORPORATED",
                 "country" : "Norway",
                 "requestState" : "Waiting",
@@ -3002,7 +3012,7 @@ Onboard requests
             },
             {
                 "requestID" : "RQ000046",
-                "assignee" : "Jane Roe",
+                "assignee" : "Nancy Desai",
                 "clientName" : "Computer Associates",
                 "country" : "Luxembourg",
                 "requestState" : "Assigned",
@@ -3011,7 +3021,7 @@ Onboard requests
             },
             {
                 "requestID" : "RQ000047",
-                "assignee" : "Jane Doe ",
+                "assignee" : "Eileen McEnroe",
                 "clientName" : "Nokia",
                 "country" : "Luxembourg",
                 "requestState" : "Draft",
@@ -3020,7 +3030,7 @@ Onboard requests
             },
             {
                 "requestID" : "RQ000048",
-                "assignee" : "John Doe",
+                "assignee" : "Safronov Roman",
                 "clientName" : "Nokia",
                 "country" : "United Kingdom",
                 "requestState" : "Completed",
@@ -3029,7 +3039,7 @@ Onboard requests
             },
             {
                 "requestID" : "RQ000049",
-                "assignee" : "John Smith",
+                "assignee" : "Oleksii Matiash",
                 "clientName" : "Xerox",
                 "country" : "Finland",
                 "requestState" : "Submitted",
@@ -3038,7 +3048,7 @@ Onboard requests
             },
             {
                 "requestID" : "RQ000050",
-                "assignee" : "John Roe",
+                "assignee" : "Denis Urusov",
                 "clientName" : "Arkema",
                 "country" : "Portugal",
                 "requestState" : "Assigned",
@@ -3058,54 +3068,54 @@ Onboard request documents
             [
                 {
                     "documentID" : "1",
-                    "name" : "Evidence of Existence",
-                    "description" : "Please provide Evidence of Existence of the Investment Manager.  Obtain 1. Full name,  2. Registered number",
+                    "name" : "Evidence of Existence of IM",
+                    "description" : "Please provide Evidence of Existence of the Investment Manager. From  a national or regional registry, Lexis Nexis, Dun & Bradstreet, OneSource, Bankers almanac, Markit. Obtain 1. Full name,  2. Registered number",
                     "updateDate" : 1407680751,
-                    "author" : "Mary",
+                    "author" : "Mary Lee",
                 },  
                 {
                 "documentID" : "2",
-                    "name" : "Evidence of Appointment",
-                    "description" : "Please provide Evidence of the appointment of the Investment Manager to the fund.",
-                    "author" : "Lead",
+                    "name" : "Evidence of Appointment of IM",
+                    "description" : "Please provide Evidence of the appointment of the Investment Manager to the fund. This evidence can be in the form of Offering Memorandum/Prospectus",
+                    "author" : "COB Lead",
                 },
                 {
                 "documentID" : "3",
                     "name" : "Portfolio Disclosure",
                     "description" : "Portfolio Disclosure/Investor Newsletter/ Schedule of Investments",
-                    "author" : "Lead",
+                    "author" : "COB Lead",
                 },
                 {
                 "documentID" : "4",
                     "name" : "Non-US Tax ID",
                     "description" : "Proof of Non-US Tax ID",
-                    "author" : "Lead",
+                    "author" : "COB Lead",
                 },
                 {
                 "documentID" : "5",
                     "name" : "Trust ID pages",
-                    "description" : "Trust Identification  and signature pages) AND Trustee Certification.",
-                    "author" : "Lead",
+                    "description" : "Trust Identification Pages 8557 (pages noting the name of the Trust, Trustee name(s), and signature pages) AND Trustee Certification (5035).",
+                    "author" : "COB Lead",
                 },
                 {
                 "documentID" : "6",
-                    "name" : "Annual Report Year 2014",
+                    "name" : "Annual Report Year 2013",
                     "description" : "Latest Annual Report",
-                    "author" : "Lead",
+                    "author" : "COB Lead",
                     "url" : "bundle://ar13c_en.pdf"
                 },
                 {
                 "documentID" : "7",
                     "name" : "KYC Form - NAM",
-                    "description" : "KYC Form",
-                    "author" : "Lead",
+                    "description" : "MGGP Form",
+                    "author" : "COB Lead",
                     "url" : "bundle://Management.pdf"
                 },
                 {
                 "documentID" : "8",
                     "name" : "Shareholder Passport",
                     "description" : "Certified copy of a current passport/national identity card for any shareholders that ultimately own 25% or more of the company",
-                    "author" : "Lead",
+                    "author" : "COB Lead",
                 }
             ],
         }
@@ -3121,8 +3131,8 @@ Onboard request documents
             [
                 {
                 "documentID" : "6",
-                    "name" : "Evidence of Existence",
-                    "description" : "Please provide Evidence of Existence of the Investment Manager. Obtain 1. Full name,  2. Registered number",
+                    "name" : "Evidence of Existence of IM",
+                    "description" : "Please provide Evidence of Existence of the Investment Manager. From  a national or regional registry, Lexis Nexis, Dun & Bradstreet, OneSource, Bankers almanac, Markit. Obtain 1. Full name,  2. Registered number",
                     "updateDate" : 1407680751,
                     "author" : "Mary Lee",
                     "url" : "https://app.apiary.io/",
@@ -3130,26 +3140,26 @@ Onboard request documents
                 {
                 "documentID" : "7",
                     "name" : "Trust ID Pages (non-US)",
-                    "description" : "Trust Identification.",
-                    "author" : "Lead",
+                    "description" : "Trust Identification Pages 8557 (pages noting the name of the Trust, Trustee name(s), and signature pages).",
+                    "author" : "COBLead",
                 },
                 {
                 "documentID" : "8",
                     "name" : "Portfolio Disclosure",
                     "description" : "Portfolio Disclosure/Investor Newsletter/ Schedule of Investments",
-                    "author" : "Lead",
+                    "author" : "COBLead",
                 },
                 {
                 "documentID" : "9",
                     "name" : "W9",
                     "description" : "W9 if have US Tax ID",
-                    "author" : "Lead",
+                    "author" : "COBLead",
                 },
                 {
                 "documentID" : "10",
                     "name" : "Trust ID pages",
-                    "description" : "Trust Identification AND Trustee Certification.",
-                    "author" : "Lead",
+                    "description" : "Trust Identification Pages 8557 (pages noting the name of the Trust, Trustee name(s), and signature pages) AND Trustee Certification (5035).",
+                    "author" : "COBLead",
                 }
             ],
         }
@@ -3165,8 +3175,8 @@ Onboard request documents
             [
                 {
                 "documentID" : "11",
-                    "name" : "Evidence of Existence",
-                    "description" : "Please provide Evidence of Existence of the Investment Manager.  Obtain 1. Full name,  2. Registered number",
+                    "name" : "Evidence of Existence of IM",
+                    "description" : "Please provide Evidence of Existence of the Investment Manager. From  a national or regional registry, Lexis Nexis, Dun & Bradstreet, OneSource, Bankers almanac, Markit. Obtain 1. Full name,  2. Registered number",
                     "updateDate" : 1407680751,
                     "author" : "Mary Lee",
                     "url" : "https://app.apiary.io/",
@@ -3175,25 +3185,25 @@ Onboard request documents
                 "documentID" : "12",
                     "name" : "Annual Financial Statement",
                     "description" : "Latest Audited Annual Financial Statements",
-                    "author" : "Lead",
+                    "author" : "COBLead",
                 },
                 {
                 "documentID" : "13",
                     "name" : "Portfolio Disclosure",
                     "description" : "Portfolio Disclosure/Investor Newsletter/ Schedule of Investments",
-                    "author" : "Lead",
+                    "author" : "COBLead",
                 },
                 {
                 "documentID" : "14",
                     "name" : "LP Agreement",
                     "description" : "Signed Limited Partnership Agreement",
-                    "author" : "Lead",
+                    "author" : "COBLead",
                 },
                 {
                 "documentID" : "15",
                     "name" : "Trust ID pages",
-                    "description" : "Trust Identification  AND Trustee Certification.",
-                    "author" : "Lead",
+                    "description" : "Trust Identification Pages 8557 (pages noting the name of the Trust, Trustee name(s), and signature pages) AND Trustee Certification (5035).",
+                    "author" : "COBLead",
                 }
             ],
         }
@@ -3205,7 +3215,7 @@ Onboard request details
 + Response 200 (application/json)
 
         {
-            "initiator" : "Jane Doe",
+            "initiator" : "Eileen McEnroe",
             "requestSummary" : "Some reuqest summary",
             "managementSummary" : "Some reuqest summary \n management details shoud be there",
             "mailstones" : 
@@ -3218,8 +3228,8 @@ Onboard request details
                 }, 
                 {
                     "isCompleate" : 1,
-                    "header" : "Assign Analyst",
-                    "asigner" : "Lead",
+                    "header" : "Assign COB Analyst",
+                    "asigner" : "COBLead",
                     "date" : 1407690751,
                 }, 
                 {
@@ -3230,7 +3240,7 @@ Onboard request details
                 }, 
                 {
                     "isCompleate" : 0,
-                    "header" : "fill form (2 of 12 reg.)",
+                    "header" : "fill questionnaries (2 of 12 reg.)",
                     "asigner" : "Manny P",
                     "date" : 1407710751,
                     "milestones" : 
@@ -3260,7 +3270,7 @@ Onboard request details
 + Response 200 (application/json)
 
         {
-            "initiator" : "Diana Fox",
+            "initiator" : "Jacqueline  Cascardi",
             "mailstones" : 
             [
                 {
@@ -3271,8 +3281,8 @@ Onboard request details
                 }, 
                 {
                     "isCompleate" : 1,
-                    "header" : "Assign Analyst",
-                    "asigner" : "Lead",
+                    "header" : "Assign COB Analyst",
+                    "asigner" : "COBLead",
                     "date" : 1407690751,
                 }, 
                 {
@@ -3283,7 +3293,7 @@ Onboard request details
                 }, 
                 {
                     "isCompleate" : 0,
-                    "header" : "Fill form (2 of 12 reg.)",
+                    "header" : "Fill Questionnaries (2 of 12 reg.)",
                     "asigner" : "Manny P",
                     "date" : 1407710751,
                     "milestones" : 
@@ -3313,7 +3323,7 @@ Onboard request details
 + Response 200 (application/json)
 
         {
-            "initiator" : "John Smith",
+            "initiator" : "Oleksii Matiash",
             "mailstones" : 
             [
                 {
@@ -3324,8 +3334,8 @@ Onboard request details
                 }, 
                 {
                     "isCompleate" : 1,
-                    "header" : "Asign Analyst",
-                    "asigner" : "Lead",
+                    "header" : "Asign COB Analyst",
+                    "asigner" : "COBLead",
                     "date" : 1407690751,
                 }, 
                 {
@@ -3336,7 +3346,7 @@ Onboard request details
                 }, 
                 {
                     "isCompleate" : 0,
-                    "header" : "fill form (2 of 12 reg.)",
+                    "header" : "fill questionnaries (2 of 12 reg.)",
                     "asigner" : "Manny P",
                     "date" : 1407710751,
                     "milestones" : 
@@ -3360,12 +3370,12 @@ Onboard request details
             "comments" :
                 [
                     {
-                        "author" : "User",
+                        "author" : "Mykhailo Vorontsov",
                         "message" : "Hello World!",
                         "date" : 1407767151,
                     },
                     {
-                        "author" : "User",
+                        "author" : "Tetiana Zavialova",
                         "message" : "Hello",
                         "date" : 1407752451,
                     },
@@ -3381,458 +3391,458 @@ GLOBAL requests
         [
         {   
             "identifier" : 101,
-            "contact" : " John Smith\njohn.smith@customerbank.com\n111-222-333\n444-555-666",
-            "office" : "CustomerBank\n1, Sample address str.\nHydra, Algiers"
+            "contact" : "Ramz Hamzaoui\nramz.hamzaoui@citi.com\n213-2-198-1989\n213-2-154-8185",
+            "office" : "Citibank N.A.\n7, Rue Larbi Alik\nHydra, Algiers"
         },
         {   
             "identifier" : 102,
-            "contact" : " John Smith\njohn.smith@customerbank.com\n111-222-333\n444-555-666",
-            "office" : "CustomerBank\n1, Sample address str.\nVienna"
+            "contact" : "Michael Edelsbrunner\nmichael.edelsbrunner@citi.com\n43-1-7171-7400\n43-1-928-0512",
+            "office" : "Citibank International plc\nAustria Branch\nKaerntner Ring 11-13\nA-1010 Vienna\nAustria"
         },
         {   
             "identifier" : 103,
-            "contact" : " John Smith\njohn.smith@customerbank.com\n111-222-333\n444-555-666",
-            "office" : "CustomerBank\n1, Sample address str.\nAlSeef District 428"
+            "contact" : "Mazin Manna\nmazin.manna@citi.com\n973-17-588-600\n973-17-583-000",
+            "office" : "Citibank N.A.\nCitibank House 1133-Road 2819\nAlSeef District 428"
         },
         {   
             "identifier" : 104,
-            "contact" : " John Smith\njohn.smith@customerbank.com\n111-222-333\n444-555-666",
-            "office" : "CustomerBank\n1, Sample address str.\nBrussels"
+            "contact" : "Pim Nederpel\npim.nederpel@citi.com\n32-2-641-9410\n32-2-731-1333",
+            "office" : "Citibank International plc\nBelgium Branch\n29 Boulevard Louis Schmidtlaan,\nB - 1040 Brussels"
         },
         {   
             "identifier" : 105,
-            "contact" : " John Smith\njohn.smith@customerbank.com\n111-222-333\n444-555-666",
-            "office" : "CustomerBank\n1, Sample address str.\nSofia"
+            "contact" : "Stefan Felstein\nstefan.felstein@citi.com\n359-2-9175-111\n359-2-98199-14",
+            "office" : "Citibank Europe plc, Bulgaria Branch\n2, Maria Louisa Blvd.\nTZUM Business Center, 5th floor\nSofia 1000"
         },
         {   
             "identifier" : 106,
-            "contact" : " John Smith\njohn.smith@customerbank.com\n111-222-333\n444-555-666",
-            "office" : "CustomerBank\n1, Sample address str.\nDouala"
+            "contact" : "Akintayo Dada\nakin.dada@citi.com\n2373-342-4109\n2373-343-8560",
+            "office" : "Citibank N.A.\nCentre d’Affaires Flatters\n96, Rue Flatters\nP.O. Box 4571, Douala"
         },
         {   
             "identifier" : 107,
-            "contact" : " John Smith\njohn.smith@customerbank.com\n111-222-333\n444-555-666",
-            "office" : "CustomerBank\n1, Sample address str.\nKinshasa - Gombe"
+            "contact" : "Viviane Bakayoko\nviviane.bakayoko@citi.com\n243-81-700-7000\n243-81-555-4812",
+            "office" : "Citibank (Congo) S.A.R.L.\nCitibank Building - Coin des Avenue\nColonel Lukusa et Ngongo-Lutete\nB.P. 9999\nKinshasa - Gombe"
         },
         {   
             "identifier" : 108,
-            "contact" : " John Smith\njohn.smith@customerbank.com\n111-222-333\n444-555-666",
-            "office" : "CustomerBank\n1, Sample address str.\nPrague 5\nCzech Republic"
+            "contact" : "Michal Nebesky\nmichal.nebesky@citi.com\n420-23-306-2277\n420-23-306-1653",
+            "office" : "Citibank Europe plc\nBucharova 2641/14\n158 02 Prague 5\nCzech Republic"
         },
         {   
             "identifier" : 109,
-            "contact" : " John Smith\njohn.smith@customerbank.com\n111-222-333\n444-555-666",
-            "office" : "CustomerBank\n1, Sample address str.\nCopenhagen V, Denmark"
+            "contact" : "Mikkel Grønlykke\nmikkel.gronlykke@citi.com\n45-3363-8310\n45-3363-8333",
+            "office" : "Citibank International plc\nH.C. Andersens Boulevard 12,\nDK-1553 Copenhagen V, Denmark"
         },
         {   
             "identifier" : 110,
-            "contact" : " John Smith\njohn.smith@customerbank.com\n111-222-333\n444-555-666",
-            "office" : "CustomerBank\n1, Sample address str.\nCairo, Egypt"
+            "contact" : "Nadir Shaikh\nnadir.shaikh@citi.com\n202-279-13-524\nor 202 -261-88-757\n202-279-22-782",
+            "office" : "Main Office\nCitibank N.A.\n8, Ahmed Pasha Street\nGarden City\n11511 Cairo, Egypt"
         },
         {   
             "identifier" : 111,
-            "contact" : " John Smith\njohn.smith@customerbank.com\n111-222-333\n444-555-666",
-            "office" : "CustomerBank\n1, Sample address str.\n Helsinki"
+            "contact" : "Kari Laukkanen\nkari.laukkanen@citi.com\n358-9-3488-7200\n358-9-4159-2304",
+            "office" : "Citigroup International plc\nFinland Branch\nAleksanterinkatu 48A\nP.O. Box 980, Helsinki 00101"
         },
         {   
             "identifier" : 112,
-            "contact" : " John Smith\njohn.smith@customerbank.com\n111-222-333\n444-555-666",
-            "office" : "CustomerBank\n1, Sample address str.\nParis"
+            "contact" : "Arnaud de Marmiés\narnaud.demarmies@citi.com\n33-1-7075-5252\n33-1-7075-5292",
+            "office" : "Citibank International plc\n1-5 rue Paul Cézanne\n75008 Paris"
         },
         {   
             "identifier" : 113,
-            "contact" : " John Smith\njohn.smith@customerbank.com\n111-222-333\n444-555-666",
-            "office" : "CustomerBank\n1, Sample address str.\nLibreville"
+            "contact" : "Juliette Weisflog\njuliette.weisflog@citi.com\n00241-0144-6603\n00241-73-8505",
+            "office" : "Citibank Gabon S.A.\n810 Boulevard Quaben et Rue Kringer\nBP 3940\nLibreville"
         },
         {   
             "identifier" : 114,
-            "contact" : " John Smith\njohn.smith@customerbank.com\n111-222-333\n444-555-666",
-            "office" : "CustomerBank\n1, Sample address str.\nFrankfurt am Main\nGermany"
+            "contact" : "Stefan Wintels\nstefan.wintels@citi.com\n49-69-1366-5645\n49-69-2222-3338",
+            "office" : "Citigroup Gbl Mkts Dtl AG\nReuterweg 16\n60323 Frankfurt am Main\nGermany"
         },
         {   
             "identifier" : 115,
-            "contact" : " John Smith\njohn.smith@customerbank.com\n111-222-333\n444-555-666",
-            "office" : "CustomerBank\n1, Sample address str.\nAthens"
+            "contact" : "Grant Carson\ngrant.carson@citi.com\n30-210-818-6505\n30-210-620-3770",
+            "office" : "Citibank International Plc\n3 Achaias & Trizinias street\n145 64, Nea Kifisia, Athens\nAnd\n8 Othonos street,\n105 57, Athens"
         },
         {   
             "identifier" : 116,
-            "contact" : " John Smith\njohn.smith@customerbank.com\n111-222-333\n444-555-666",
-            "office" : "CustomerBank\n1, Sample address str.\nDublin 1"
+            "contact" : "Aidan Brady\naidan.brady@citi.com\n3531-622-6400\n3531-622-6633",
+            "office" : "Citibank N.A.\n1 North Wall Quay\nDublin 1"
         },
         {   
             "identifier" : 117,
-            "contact" : " John Smith\njohn.smith@customerbank.com\n111-222-333\n444-555-666",
-            "office" : "CustomerBank\n1, Sample address str.\nTel Aviv"
+            "contact" : "Neil Corney\nneil.corney@citi.com\n972-3-684-2460\n972-3684-2403",
+            "office" : "Citibank N.A.\nPlatinum Building, 11th Floor\n21, Ha’arba’a Street\n64739 Tel Aviv"
         },
         {   
             "identifier" : 118,
-            "contact" : " John Smith\njohn.smith@customerbank.com\n111-222-333\n444-555-666",
-            "office" : "CustomerBank\n1, Sample address str.\nMilano"
+            "contact" : "Renzo Arcoria\nrenzo.arcoria@citi.com\n39-028-906-4379",
+            "office" : "Citibank N.A.\nvia Mercanti, 12\n20121 , Milano"
         },
         {   
             "identifier" : 119,
-            "contact" : " John Smith\njohn.smith@customerbank.com\n111-222-333\n444-555-666",
-            "office" : "CustomerBank\n1, Sample address str.\nCote d'Ivoire"
+            "contact" : "Kevin Murray\nkevin.a.murray@citi.com\n225-20-20-9010\n225-20-21-7685",
+            "office" : "Citigroup/Citibank Cote d'Ivoire\n28 Avenue Delafosse\nImmeuble Botreau Roussel\nAbidjan 01, Cote d'Ivoire, Africa 01 B.P.\n3698"
         },
         {   
             "identifier" : 120,
             "contact" : "Sarah Fitzgerald\n+44 (0) 1534-608-101",
-            "office" : "CustomerBank\n1, Sample address str.\nChannel Islands"
+            "office" : "Citibank (Channel Islands) Limited\nP O Box 104\n38 Esplanade\nSt Helier\nJersey JE4 8QB\nChannel Islands"
         },
         {   
             "identifier" : 121,
-            "contact" : " John Smith\njohn.smith@customerbank.com\n111-222-333\n444-555-666",
-            "office" : "CustomerBank\n1, Sample address str.\nAmman"
+            "contact" : "Mayank Malik\nmayank.malik@citi.com\n962-6-567-1600\n962-6-565-3902",
+            "office" : "Citibank N.A.\nP.O. Box 5055\nPrince Shaker Ban-Zeid Street\nShmeisani, 11183 Amman"
         },
         {   
             "identifier" : 122,
-            "contact" : " John Smith\njohn.smith@customerbank.com\n111-222-333\n444-555-666",
-            "office" : "CustomerBank\n1, Sample address str.\nAlmaty"
+            "contact" : "Andrey Kurilin\nandrey.kurilin@citi.com\n7-727-298-0515\n7-727-298-0399",
+            "office" : "JSC Citibank Kazakhstan\n41A, Kazybek Bi Str\nAlmaty 050010"
         },
         {   
             "identifier" : 123,
-            "contact" : " John Smith\njohn.smith@customerbank.com\n111-222-333\n444-555-666",
-            "office" : "CustomerBank\n1, Sample address str.\nNairobi, Kenya"
+            "contact" : "Joyce-Ann Wainaina\njoyceann.wainaina@citi.com\n254-20-275-4014\n254-20-271-9372",
+            "office" : "Citibank House\nUpper Hill Road\nP O Box 30711\n00100 - Nairobi, Kenya"
         },
         {   
             "identifier" : 124,
-            "contact" : " John Smith\njohn.smith@customerbank.com\n111-222-333\n444-555-666",
-            "office" : "CustomerBank\n1, Sample address str.\nSafat, Kuwait"
+            "contact" : "Ozgur Kutay\nozgur.kutay@citi.com\n965-2259-4040\n965-2259-4004",
+            "office" : "Citibank N.A. Kuwait\nAhmed Tower, 10th floor\nArabian Gulf Street\nSharq\nP.O.Box 26027\nSafat 13121, Kuwait"
         },
         {   
             "identifier" : 125,
-            "contact" : " John Smith\njohn.smith@customerbank.com\n111-222-333\n444-555-666",
-            "office" : "CustomerBank\n1, Sample address str.\n, Beirut"
+            "contact" : "Elissar Farah Antonios\nelissar.antonios@citi.com\n965-2259-4040\n965-2259-4004",
+            "office" : "Citibank N.A.\nBerytus Parks\nBlock A-3rd Floor\nBeirut Central District\nP.O. Box 111535, Beirut"
         },
         {   
             "identifier" : 126,
-            "contact" : " John Smith\njohn.smith@customerbank.com\n111-222-333\n444-555-666",
-            "office" : "CustomerBank\n1, Sample address str.\nLuxembourg"
+            "contact" : "Pervaiz Amir Ali\nPanjwani\npervaiz.a.panjwani@citi.com\n352-45-14-14410\n352-45-14-14253",
+            "office" : "Citibank International plc \n(Luxembourg Branch) \n2nd Floor\n31 Z.A. Bourmicht L-8070 Bertrange\nLuxembourg"
         },
         {   
             "identifier" : 127,
-            "contact" : " John Smith\njohn.smith@customerbank.com\n111-222-333\n444-555-666",
-            "office" : "CustomerBank\n1, Sample address str.\nCasablanca-Maroc"
+            "contact" : "Walter Siouffi\nwalter.siouffi@citi.com\n212-225-48-9601\n212-225-48-9697",
+            "office" : "Citibank Maghreb\nZenith Millenium Immeuble\n1 Lotissement Attaoufik\nSidi-Maârouf, 20190\nCasablanca-Maroc B.P40"
         },
         {   
             "identifier" : 128,
-            "contact" : " John Smith\njohn.smith@customerbank.com\n111-222-333\n444-555-666",
-            "office" : "CustomerBank\n1, Sample address str.\nBH Schiphol Airport"
+            "contact" : "Auke Leenstra\nauke.leenstra@citi.com\n31-20-651-4428\n31-20-716-8135",
+            "office" : "WTC Schiphol\nSchiphol Boulevard 257\nTower D, Floor 8\n1118 BH Schiphol Airport"
         },
         {   
             "identifier" : 129,
-            "contact" : " John Smith\njohn.smith@customerbank.com\n111-222-333\n444-555-666",
-            "office" : "CustomerBank\n1, Sample address str.\nLagos, Nigeria"
+            "contact" : "Omar Hafeez\nomar.hafeez@citi.com\n234-1-279-8400 x8401\n234-1270-2199",
+            "office" : "Citibank Nigeria Limited\n27 Kofo Abayomi Street\nVictoria Island\nLagos, Nigeria"
         },
         {   
             "identifier" : 130,
-            "contact" : " John Smith\njohn.smith@customerbank.com\n111-222-333\n444-555-666",
-            "office" : "CustomerBank\n1, Sample address str.\nOslo"
+            "contact" : "Pal Rokke\npal.rokke@citi.com\n47-2200-9641\n47-2200-9622",
+            "office" : "Citibank International plc\nNorway Branch\nTordenskioldsgate 8-10\nP.O. Box 1481 Vika\nN-0116 Oslo"
         },
         {   
             "identifier" : 131,
-            "contact" : " John Smith\njohn.smith@customerbank.com\n111-222-333\n444-555-666",
-            "office" : "CustomerBank\n1, Sample address str.\nKarachi"
+            "contact" : "Nadeem Lodhi\nnadeem.lodhi@citi.com\n9221-3263-8398/8222\n9221-3263-8211",
+            "office" : "Citibank N.A.\nAWT Plaza, 1st Floor\nP.O. Box 4889\nI.I. Chundrigar Road\n74200 Karachi"
         },
         {   
             "identifier" : 132,
-            "contact" : " John Smith\njohn.smith@customerbank.com\n111-222-333\n444-555-666",
-            "office" : "CustomerBank\n1, Sample address str.\n Warsaw, Poland"
+            "contact" : "Slawomir S. Sikora\nslawomir.s.sikora@citi.com\n4822-657-7541\n4822-657-7545",
+            "office" : "Citi Handlowy\nSenatorska 16\n00-923 Warsaw, Poland"
         },
         {   
             "identifier" : 133,
-            "contact" : " John Smith\njohn.smith@customerbank.com\n111-222-333\n444-555-666",
-            "office" : "CustomerBank\n1, Sample address str.\nLisbon"
+            "contact" : "Luis Aguiar\nluis.aguiar@citi.com\n351-21-311-6326\n351-21-311-6399",
+            "office" : "Citibank International Plc\nEdificio Fundacao\nRua Barata Salgueiro, 30 – 4th Floor\n1269-056 Lisbon"
         },
         {   
             "identifier" : 134,
-            "contact" : " John Smith\njohn.smith@customerbank.com\n111-222-333\n444-555-666",
-            "office" : "CustomerBank\n1, Sample address str.\nDoha"
+            "contact" : "Carmen Haddad\ncarmen.haddad@citi.com\n974-449-66866\n",
+            "office" : "Citibank, N.A.\nQatar Financial Centre Tower 1\n9th Floor, West Bay\nDoha"
         },
         {   
             "identifier" : 135,
-            "contact" : " John Smith\njohn.smith@customerbank.com\n111-222-333\n444-555-666",
-            "office" : "CustomerBank\n1, Sample address str.\nBucharest, Romania"
+            "contact" : "Tibor Pandi\ntibor.pandi@citi.com\n40-21-203-6005\n40-21-203-5203",
+            "office" : "Citibank Europe plc Romania Branch\n145 Calea Victoriei\nSector 1, 010072\nBucharest, Romania"
         },
         {   
             "identifier" : 136,
-            "contact" : " John Smith\njohn.smith@customerbank.com\n111-222-333\n444-555-666",
-            "office" : "CustomerBank\n1, Sample address str.\nMoscow"
+            "contact" : "Marc Luet\nmarc.luet@citi.com\n7495-643-1400\n7495-643-1401",
+            "office" : "ZAO Citibank\n6 Gasheka Street, 4th Floor\n125047 Moscow"
         },
         {   
             "identifier" : 137,
-            "contact" : " John Smith\njohn.smith@customerbank.com\n111-222-333\n444-555-666",
-            "office" : "CustomerBank\n1, Sample address str.\nDakar, Senegal"
+            "contact" : "Khady Ndiaye\nkhady.ndiaye@citi.com\n221-33-849-1104 /11\n221-33-823-8817",
+            "office" : "Citibank Senegal S.A.\n2, Place de l'Independance\nImmeuble SDIH, 4th Fl.oor\nB.P 3391, Dakar, Senegal"
         },
         {   
             "identifier" : 138,
-            "contact" : " John Smith\njohn.smith@customerbank.com\n111-222-333\n444-555-666",
-            "office" : "CustomerBank\n1, Sample address str.\nMadrid"
+            "contact" : "William Van Dyke\nmaria.delcampo@citi.com\n34-91-538-4141\n34-91-114-1315",
+            "office" : "Citibank International Plc\nJose Ortega y Gasset, No 29\n4 Planta\n28006 Madrid"
         },
         {   
             "identifier" : 139,
-            "contact" : " John Smith\njohn.smith@customerbank.com\n111-222-333\n444-555-666",
-            "office" : "CustomerBank\n1, Sample address str.\nBratislava\nSlovakia"
+            "contact" : "Igor Kottman\nhana.laurencikova@citi.com\n421-2-5823-0324\n421-2-5823-0211",
+            "office" : "Citibank Europe plc, pobocka\nzahranicnej banky\nMlynske nivy 43\n821 05 Bratislava\nSlovakia"
         },
         {   
             "identifier" : 140,
-            "contact" : " John Smith\njohn.smith@customerbank.com\n111-222-333\n444-555-666",
-            "office" : "CustomerBank\n1, Sample address str.\nSandown, Sandton"
+            "contact" : "Donna Oosthuyse\nelinor.bodinger@citi.com\n27-11-944-0212\n27-11-944-0839",
+            "office" : "Citibank N.A.\n145 West Street\nSandown, Sandton 2196"
         },
         {   
             "identifier" : 141,
-            "contact" : " John Smith\njohn.smith@customerbank.com\n111-222-333\n444-555-666",
-            "office" : "CustomerBank\n1, Sample address str.\nStockholm"
+            "contact" : "Clas Ronnlov\nannamaria.johnson@citi.com\n46-8-723-3422\nCell: 46-709-92-3408",
+            "office" : "Citibank International plc\nSweden Branch\nSergelgatan 1\nBox 1422\nSE-111 84 Stockholm"
         },
         {   
             "identifier" : 142,
-            "contact" : " John Smith\njohn.smith@customerbank.com\n111-222-333\n444-555-666",
-            "office" : "CustomerBank\n1, Sample address str.\nGeneva"
+            "contact" : "Catherine Weir\nyolande.santhagens@citi.com\n41-58-750-5666\n41-58-750-5304",
+            "office" : "Citibank Switzerland\n16 Quai General-Guisan\nPO Box 3946\nCH-1211 Geneva 3"
         },
         {   
             "identifier" : 143,
-            "contact" : " John Smith\njohn.smith@customerbank.com\n111-222-333\n444-555-666",
-            "office" : "CustomerBank\n1, Sample address str.\nDar es Salaam"
+            "contact" : "Joseph Carasso\ngrace.kahama@citi.com\n255-22-221-1201\n255-22-213-9743",
+            "office" : "Citibank Tanzania Ltd.\nPeugeot House\n36 Upanga Road\nP.O. Box 71625, Dar es Salaam"
         },
         {   
             "identifier" : 144,
-            "contact" : " John Smith\njohn.smith@customerbank.com\n111-222-333\n444-555-666",
-            "office" : "CustomerBank\n1, Sample address str.\nTunisia"
+            "contact" : "Haykel Belhassine\nmonia.benslimane@citi.com\n216-71-11-33-10\n216-71-79-29-06",
+            "office" : "Citibank, N.A.\n55 Avenue Jugurtha\nTunis-Belvedere, 1002\nTunisia"
         },
         {   
             "identifier" : 145,
-            "contact" : " John Smith\njohn.smith@customerbank.com\n111-222-333\n444-555-666",
-            "office" : "CustomerBank\n1, Sample address str.\nİstanbul Türkiye"
+            "contact" : "Serra Akcaoglu\nserra.akcaoglu@citi.com\n90-212-319-4401\n90-212 319-4406",
+            "office" : "Citibank A.S. Turkey\nEski Buyukdere Cad.\nTekfen Tower\nNo: 209 Fl. 4\n34394 Levent\nİstanbul Türkiye"
         },
         {   
             "identifier" : 146,
-            "contact" : " John Smith\njohn.smith@customerbank.com\n111-222-333\n444-555-666",
-            "office" : "CustomerBank\n1, Sample address str.\nNakasero, Kampala\nUganda"
+            "contact" : "Chinedu Ikwudinma\nchinedu.ikwudinma@citi.com\n256-414-305-514\n256-414-340-624",
+            "office" : "Citibank Uganda Limited\nCenter Court, Plot No. 4\nTernan Avenue\nNakasero, Kampala\nUganda"
         },
         {   
             "identifier" : 147,
-            "contact" : " John Smith\njohn.smith@customerbank.com\n111-222-333\n444-555-666",
-            "office" : "CustomerBank\n1, Sample address str.\nKyiv"
+            "contact" : "Steven Fisher\nsteven.fisher@citi.com\n38-044-490-1001\n38-044-490-1033",
+            "office" : "PJSC Citibank\n16G, Dimitrova St.\n03150 Kyiv"
         },
         {   
             "identifier" : 148,
-            "contact" : " John Smith\njohn.smith@customerbank.com\n111-222-333\n444-555-666",
-            "office" : "CustomerBank\n1, Sample address str.\nDubai\nUnited Arab Emirates"
+            "contact" : "Atiq Ur Rehman\natiqur.rehman@citi.com\n9714-5099-780\n9714-4250-119",
+            "office" : "Citibank N.A.\nP.O. Box 749\nOud Metha Road\n(near Wafi City)\nAl Wasl Building\n6th Floor, Dubai\nUnited Arab Emirates"
         },
         {   
             "identifier" : 149,
-            "contact" : " John Smith\njohn.smith@customerbank.com\n111-222-333\n444-555-666",
-            "office" : "CustomerBank\n1, Sample address str.\nLondon"
+            "contact" : "James Bardrick\njames.bardrick@citi.com\n44-20-7986-6943\n44-20-7986-8255",
+            "office" : "Citigroup Centre\n25 Canada Square\nCanary Wharf\nLondon E14 5LB"
         },
         {   
             "identifier" : 201,
             "contact" : "800-285-3000",
-            "office" : "CustomerBank\n1, Sample address str.\nU.S.A."
+            "office" : "Citi\n399 Park Avenue\nNew York, NY 10043\nU.S.A."
         },
         {   
             "identifier" : 202,
-            "contact" : " John Smith\njohn.smith@customerbank.com\n111-222-333\n444-555-666",
-            "office" : "CustomerBank\n1, Sample address str.\nToronto, Ontario"
+            "contact" : "John Hastings\njohn.hastings@citi.com\n416-947-2947\n416-915-6289",
+            "office" : "Citibank Canada\nCitibank Place\n123 Front Street W., Suite 1900, 19th floor\nToronto, Ontario M5J 2M3"
         },
         {   
             "identifier" : 301,
-            "contact" : " John Smith\njohn.smith@customerbank.com\n111-222-333\n444-555-666",
-            "office" : "CustomerBank\n1, Sample address str.\nCapital Federal"
+            "contact" : "Gabriel Ribisich\ngabriel.ribisich@citi.com\n54-11-4329-1290\n54-11-4329-1032",
+            "office" : "Citibank N.A.\nBartolome Mitre 530, Piso 2\nBuenos Aires (1036),Capital Federal"
         },
         {   
             "identifier" : 302,
-            "contact" : " John Smith\njohn.smith@customerbank.com\n111-222-333\n444-555-666",
-            "office" : "CustomerBank\n1, Sample address str.\nNassau, Bahamas"
+            "contact" : "Margaret A. Butler\nmargaret.a.butler@citi.com\n242-302-8653\n242-302-8779",
+            "office" : "Citibank, N.A.\nLatin American Investment Bank\nBahamas Ltd.\nCiti Building\n110 Thompson Blvd.,\nPO Box N-1576\nNassau, Bahamas"
         },
         {   
             "identifier" : 303,
-            "contact" : " John Smith\njohn.smith@customerbank.com\n111-222-333\n444-555-666",
-            "office" : "CustomerBank\n1, Sample address str.\nTrinidad, West Indies"
+            "contact" : "Catalina Herrera Roca\nlesley.taylorgouveia@citi.com\n1-868-821-6099\n868-627-6128",
+            "office" : "Citibank (Trinidad & Tobago) Ltd.\n12 Queens Park East\nPort of Spain\nTrinidad, West Indies"
         },
         {   
             "identifier" : 304,
-            "contact" : " John Smith\njohn.smith@customerbank.com\n111-222-333\n444-555-666",
-            "office" : "CustomerBank\n1, Sample address str.\nSao Paulo – SP"
+            "contact" : "Helio Magalhães\nhelio.magalhaes@citi.com\n5511-4009-2097\n5511-4009-2873",
+            "office" : "Citibank N.A.\nAv. Paulista 1111, 17th Floor\n1311920\nSao Paulo – SP"
         },
         {   
             "identifier" : 305,
-            "contact" : " John Smith\njohn.smith@customerbank.com\n111-222-333\n444-555-666",
-            "office" : "CustomerBank\n1, Sample address str.\nSantiago, Chile"
+            "contact" : "Gustavo Salischiker\ngustavo.salischiker@citi.com\n56-2-2429-6506\n562 - 2430 9555",
+            "office" : "Av. El Bosque Norte 500\nLas Condes, 7th Floor\nSantiago\n7550092 Chile"
         },
         {   
             "identifier" : 306,
-            "contact" : " John Smith\njohn.smith@customerbank.com\n111-222-333\n444-555-666",
-            "office" : "CustomerBank\n1, Sample address str.\nBogota, Colombia"
+            "contact" : "Bernardo Norena\nBernardo500.norena@citi.com\n57-1-639-4182\n57-1-487-6948",
+            "office" : "Citibank\nCarrera 9A, No. 99-02\nPiso 3º\nBogota, Colombia"
         },
         {   
             "identifier" : 307,
-            "contact" : " John Smith\njohn.smith@customerbank.com\n111-222-333\n444-555-666",
-            "office" : "CustomerBank\n1, Sample address str.\nSan José, Costa Rica"
+            "contact" : "Marcelo Gorrini\nmarcelo.a.gorrini@citi.com\n506-2519-6153\n506-2519-6019",
+            "office" : "Citibank\nBlvd. Rohrmoser\nFrente a Plaza Mayor\nEdificio Citibank, 4to piso\nSan José, Costa Rica"
         },
         {   
             "identifier" : 308,
-            "contact" : " John Smith\njohn.smith@customerbank.com\n111-222-333\n444-555-666",
-            "office" : "CustomerBank\n1, Sample address str.\nSanto Domingo, D.R."
+            "contact" : "Maximo Vidal\nmaximo.vidal@citi.com\n809-473-2403\n809-955-2657",
+            "office" : "Citibank N.A.\nSucursal Republica Dominicana\nAv. Winston Churchill esq. A.J. Aybar\nCitibank Tower at Acropolis Plaza\nSanto Domingo, D.R."
         },
         {   
             "identifier" : 309,
-            "contact" : " John Smith\njohn.smith@customerbank.com\n111-222-333\n444-555-666",
-            "office" : "CustomerBank\n1, Sample address str.\nQuito, Ecuador"
+            "contact" : "Diana Torres\ndiana.torres@citi.com\n59-32-297-0159\n59-32-297-0200",
+            "office" : "Citibank, N.A. Sucursal Ecuador\nAve. República de El Salvador N36-230\ny Naciones Unidas\nQuito, Ecuador"
         },
         {   
             "identifier" : 310,
-            "contact" : " John Smith\njohn.smith@customerbank.com\n111-222-333\n444-555-666",
-            "office" : "CustomerBank\n1, Sample address str.\nSanta Tecla, La Libertad"
+            "contact" : "Juan Miro\njuan.miro@citi.com\n503-2212-3944\n503-2212-3526",
+            "office" : "Banco Citibank de El Salvador\nKilómetro 10 carretera a Santa Tecla\nEdificio Pirámide Citi, 3er. Nivel.\nSanta Tecla, La Libertad"
         },
         {   
             "identifier" : 311,
-            "contact" : " John Smith\njohn.smith@customerbank.com\n111-222-333\n444-555-666",
-            "office" : "CustomerBank\n1, Sample address str.\nGuatemala City"
+            "contact" : "Bernardo Chacin\nbernardo.chacin@citi.com\n502-2336-8412\n502-2377-3268",
+            "office" : "Banco Citibank de Guatemala, S.A.\nEdificio Céntrica\n15 calle 1-04, Zona 10, Torre I, Nivel 2\nGuatemala City"
         },
         {   
             "identifier" : 312,
-            "contact" : " John Smith\njohn.smith@customerbank.com\n111-222-333\n444-555-666",
-            "office" : "CustomerBank\n1, Sample address str.\nPort-au-Prince, Haiti"
+            "contact" : "John Alfonso Lopez\nPerez\njohn.alfonso.lopezperez@citi.com\n509-2299-3230\n509-2299-3200",
+            "office" : "Citibank N.A.\nAngle Boulevard Toussaint Louverture &\nrue Frère Simmonds\nPort-au-Prince, Haiti"
         },
         {   
             "identifier" : 313,
-            "contact" : " John Smith\njohn.smith@customerbank.com\n111-222-333\n444-555-666",
-            "office" : "CustomerBank\n1, Sample address str.\nTegucigalpa, M.D.C.\nHonduras, C.A."
+            "contact" : "Reina Irene Mejia\nreina.i.mejia@citi.com\n504-2216-0044\n504-2232-0123",
+            "office" : "Banco de Honduras, S.A., Una Subsidiaria\nde Citibank,N.A.\nInterseccion Bulevar Suyapa y Colonia\nLoma Linda, 2 Piso\nTegucigalpa, M.D.C.\nHonduras, C.A."
         },
         {   
             "identifier" : 314,
-            "contact" : " John Smith\njohn.smith@customerbank.com\n111-222-333\n444-555-666",
-            "office" : "CustomerBank\n1, Sample address str.\nKingston, Jamaica"
+            "contact" : "Peter Moses\npeter.moses@citi.com\n876-936-3263 or 876-\n927-7647\n876-978-8889",
+            "office" : "Citibank N.A.\n19 Hillcrest Avenue\nKingston 6, Jamaica"
         },
         {   
             "identifier" : 315,
             "contact" : "Javier Arrigunaga\njavier.arrigunaga@banamex.co\n52-55-2226-6221\n52-55-2226-7447",
-            "office" : "CustomerBank\n1, Sample address str.\nMexico D.F."
+            "office" : "Grupo Financiero Banamex\nAct. Roberto Medellin 800\nSouth building, 5th floor\nMexico D.F., 01210"
         },
         {   
             "identifier" : 316,
-            "contact" : " John Smith\njohn.smith@customerbank.com\n111-222-333\n444-555-666",
-            "office" : "CustomerBank\n1, Sample address str.\nManagua, Nicaragua"
+            "contact" : "Ana Maria Fernandez\nana.maria.fernandez@citi.com\n505 2280-9340 Ext 201\n505-2268-2754",
+            "office" : "Banco Citibank de Nicaragua, S.A.\nPlaza España, de la Rotonda El\nGueguense, 25 vrs hacia oeste, Edificio\nCitibank, Managua, Nicaragua"
         },
         {   
             "identifier" : 317,
-            "contact" : " John Smith\njohn.smith@customerbank.com\n111-222-333\n444-555-666",
-            "office" : "CustomerBank\n1, Sample address str.\nPanama, Rep. of Panama"
+            "contact" : "Raymond Gatcliffe\nraymond.gatcliffe@citi.com\n507-210-5998\n507-210- 5904",
+            "office" : "Citi Panama\nTorres Las Americas, Tower B\n14th Floor Punta Pacifica, Paitilla\nPanama, Rep. of Panama\nP.O. Box 0834-00555"
         },
         {   
             "identifier" : 318,
-            "contact" : " John Smith\njohn.smith@customerbank.com\n111-222-333\n444-555-666",
-            "office" : "CustomerBank\n1, Sample address str.\nAsuncion"
+            "contact" : "Jeronimo Nasser\njeronimo.nasser@citi.com\n59521-620-2100/2102\n59521-620-2101",
+            "office" : "Citibank N.A.\nMariscal Lopez 3794 y Cruz del Chaco\nAsuncion"
         },
         {   
             "identifier" : 319,
-            "contact" : " John Smith\njohn.smith@customerbank.com\n111-222-333\n444-555-666",
-            "office" : "CustomerBank\n1, Sample address str.\nSan Isidro, Lima"
+            "contact" : "Julio Figueroa\njulio.figueroa@citi.com\n511-215-2001\n54 -11-4708-3972",
+            "office" : "Citibank N.A.\nAv. Canaval y Moreyra 480 Piso 4\nEdificio Chocavento\nSan Isidro, Lima 27"
         },
         {   
             "identifier" : 320,
-            "contact" : " John Smith\njohn.smith@customerbank.com\n111-222-333\n444-555-666",
-            "office" : "CustomerBank\n1, Sample address str.\nSan Juan"
+            "contact" : "Guillermo Gomez\nguillermo.gomez@citi.com\n787-766-1173/74\n787-766-2080",
+            "office" : "Citibank N.A.\n270 Muñoz Rivera Avenue\n6th. Floor\nSan Juan, PR 00918"
         },
         {   
             "identifier" : 321,
-            "contact" : " John Smith\njohn.smith@customerbank.com\n111-222-333\n444-555-666",
-            "office" : "CustomerBank\n1, Sample address str.\nTrinidad, West Indies"
+            "contact" : "Catalina Herrera Roca\nlesley.taylorgouveia@citi.com\n1-868-821-6099\n868-627-6128",
+            "office" : "Citibank (Trinidad & Tobago) Ltd.\n12 Queens Park East\nPort of Spain\nTrinidad, West Indies"
         },
         {   
             "identifier" : 322,
-            "contact" : " John Smith\njohn.smith@customerbank.com\n111-222-333\n444-555-666",
-            "office" : "CustomerBank\n1, Sample address str.\nMontevideo"
+            "contact" : "Vivianne Caumont\nvivianne.caumont@citi.com\n5982-915-5687\n5982-916-0645",
+            "office" : "Citibank N.A.\nCerrito 455\nMontevideo 11000"
         },
         {   
             "identifier" : 323,
-            "contact" : " John Smith\njohn.smith@customerbank.com\n111-222-333\n444-555-666",
-            "office" : "CustomerBank\n1, Sample address str.\nCaracas, Venezuela"
+            "contact" : "Nelson Acosta\nnelson.acosta@citi.com\n58212-705-2724\n58212-705-2791",
+            "office" : "Citibank N.A.\nAv. Casanova, C.C. El Recreo\nTorre Norte, Piso 21\nCaracas, Venezuela"
         },
         {   
             "identifier" : 401,
-            "contact" : " John Smith\njohn.smith@customerbank.com\n111-222-333\n444-555-666",
-            "office" : "CustomerBank\n1, Sample address str.\nSydney, NSW 2000"
+            "contact" : "Stephen H. Roberts\nstephen.h.roberts@citi.com\n612-8225-8888\n612-8225-5208",
+            "office" : "Citigroup Centre\nLevel 23\n2 Park Street\nSydney, NSW 2000"
         },
         {   
             "identifier" : 402,
-            "contact" : " John Smith\njohn.smith@customerbank.com\n111-222-333\n444-555-666",
-            "office" : "CustomerBank\n1, Sample address str.\nDhaka - 1212"
+            "contact" : "Rashed Maqsood\nrashed.maqsood@citi.com\n880-2-881-7587\n880-2-988-8201",
+            "office" : "Citibank N.A.\n8, Gulshan Avenue\nGulshan-1, Dhaka - 1212"
         },
         {   
             "identifier" : 403,
-            "contact" : " John Smith\njohn.smith@customerbank.com\n111-222-333\n444-555-666",
-            "office" : "CustomerBank\n1, Sample address str.\nCentral Hong Kong"
+            "contact" : "Weber Lo\nweber.wp.lo@citi.com\n852-2868-8740\n852-2868-8788",
+            "office" : "Citibank N.A.\nCitibank Tower 49/F\nCitibank Plaza\n3 Garden Road\nCentral Hong Kong"
         },
         {   
             "identifier" : 404,
-            "contact" : " John Smith\njohn.smith@customerbank.com\n111-222-333\n444-555-666",
-           "office" : "CustomerBank\n1, Sample address str.\nShanghai, China 200120"
+            "contact" : "Andrew Au\nandrew.au@citi.com\n86-21-2896-6008\n86-21-5879-5933",
+            "office" : "Citigroup China\n35/F, Citigroup Tower\n33 Hua Yuan Shi Qiao Road\nPudong, Shanghai, China 200120"
         },
         {   
             "identifier" : 405,
-            "contact" : " John Smith\njohn.smith@customerbank.com\n111-222-333\n444-555-666",
-            "office" : "CustomerBank\n1, Sample address str.\nCentral Hong Kong"
+            "contact" : "Weber Lo\nweber.wp.lo@citi.com\n852-2868-8740\n852-2868-8788",
+            "office" : "Citibank N.A.\nCitibank Tower 49/F\nCitibank Plaza\n3 Garden Road\nCentral Hong Kong"
         },
         {   
             "identifier" : 406,
-            "contact" : " John Smith\njohn.smith@customerbank.com\n111-222-333\n444-555-666",
-            "office" : "CustomerBank\n1, Sample address str.\nMumbai – 400 051"
+            "contact" : "Pramit Jhaveri\npramit.jhaveri@citi.com\n9122-6175-5001\n9122-6719-3894",
+            "office" : "Citibank, First International Financial\nCenter (FIFC), 14th Floor, Plot No. C-54 &\nC-55, G- Block, Bandra Kurla Complex,\nBandra (E),\nMumbai – 400 051"
         },
         {   
             "identifier" : 407,
-            "contact" : " John Smith\njohn.smith@customerbank.com\n111-222-333\n444-555-666",
-            "office" : "CustomerBank\n1, Sample address str.\nJakarta 12190"
+            "contact" : "Tigor M. Siahaan\ntigor.m.siahaan@citi.com\n6221-5290-8300\n6221-5290-8303",
+            "office" : "Citibank N.A.\n7th Fl Citibank Tower\nJl. Jend. Sudirman Kav. 54-55\nJakarta 12190"
         },
         {   
             "identifier" : 408,
-            "contact" : " John Smith\njohn.smith@customerbank.com\n111-222-333\n444-555-666",
-            "office" : "CustomerBank\n1, Sample address str.\n Tokyo\nJapan 100-6520"
+            "contact" : "Peter Eliot\npeter.b.eliot@citi.com\n81-3-6270-6888\n81-3-6270-6820",
+            "office" : "Citigroup Japan Holdings Corp.\nShin Marunouchi Bldg – 22nd Floor\n1-5-1 Marunouchi\nChiyoda-ku, Tokyo\nJapan 100-6520"
         },
         {   
             "identifier" : 409,
-            "contact" : " John Smith\njohn.smith@customerbank.com\n111-222-333\n444-555-666",
-            "office" : "CustomerBank\n1, Sample address str.\n50450 Kuala Lumpur"
+            "contact" : "\n\n603-2383-2002\n603-2166-7932",
+            "office" : "Citibank Berhad\nLevel 45, Menara Citibank\n165 Jalan Ampang\n50450 Kuala Lumpur"
         },
         {   
             "identifier" : 410,
-            "contact" : " John Smith\njohn.smith@customerbank.com\n111-222-333\n444-555-666",
-            "office" : "CustomerBank\n1, Sample address str.\nAuckland 1140, New Zealand"
+            "contact" : "Derek Syme\nderek.syme@citi.com\n64-9-307-1918\n64-9-307-1984",
+            "office" : "Citibank Building\nLevel 11\n23 Customs Street East\nPO Box 3429\nAuckland 1140, New Zealand"
         },
         {   
             "identifier" : 411,
-            "contact" : " John Smith\njohn.smith@customerbank.com\n111-222-333\n444-555-666",
-            "office" : "CustomerBank\n1, Sample address str.\nMakati City 1226, Metro Manila"
+            "contact" : "Batara Sianturi\nbatara.sianturi@citi.com\n632-894-7700\n632-894-7703",
+            "office" : "Citibank N.A.\n9th Floor, Citibank Tower\n8741 Paseo de Roxas\nMakati City 1226, Metro Manila"
         },
         {   
             "identifier" : 412,
-            "contact" : " John Smith\njohn.smith@customerbank.com\n111-222-333\n444-555-666",
-            "office" : "CustomerBank\n1, Sample address str.\nSingapore 018960"
+            "contact" : "Michael Zink\nwendy.soh@citi.com\n65-6657-6888\n65-6657-6882",
+            "office" : "Citibank, N.A.\n8 Marina View\n#21-00 Asia Square Tower 1\nSingapore 018960"
         },
         {   
             "identifier" : 413,
-            "contact" : " John Smith\njohn.smith@customerbank.com\n111-222-333\n444-555-666",
-            "office" : "CustomerBank\n1, Sample address str.\nSeoul 100-180 KOREA"
+            "contact" : "Yung-Ku Ha\nyungku.ha@citi.com\n822-3455-2000\n822-3455-2950",
+            "office" : "Citibank Korea Inc.\n39, Da-dong, Jung-gu\nSeoul 100-180 KOREA"
         },
         {   
             "identifier" : 414,
-            "contact" : " John Smith\njohn.smith@customerbank.com\n111-222-333\n444-555-666",
-            "office" : "CustomerBank\n1, Sample address str.\nColombo 7"
+            "contact" : "Ravin Basnayake\nshanaka.waduge@citi.com\n94-11-479-4718\n94-11-244-5487",
+            "office" : "Citibank N.A.\n65C Dharmapala Mawatha\nColombo 7"
         },
         {   
             "identifier" : 415,
-            "contact" : " John Smith\njohn.smith@customerbank.com\n111-222-333\n444-555-666",
-            "office" : "CustomerBank\n1, Sample address str.\nTaipei 110"
+            "contact" : "Victor Kuan\nceleste.teng@citi.com\n886-2-8725-5366\n886-2-8725-5056",
+            "office" : "Citibank N.A.\n12th Floor\nNo. 1, Songzhi Road\nTaipei 110"
         },
         {   
             "identifier" : 416,
-            "contact" : " John Smith\njohn.smith@customerbank.com\n111-222-333\n444-555-666",
-            "office" : "CustomerBank\n1, Sample address str.\nBangkok 10110\nThailand"
+            "contact" : "Darren Buckley\nc.kwanjai@citi.com\n66-2-788-3100\n66-2-788-4832",
+            "office" : "Citibank, N.A.\n19/F Interchange 21 Building\n399 Sukhumvit Road\nKlongtoey Nua, Wattana\nBangkok 10110\nThailand"
         },
         {   
             "identifier" : 417,
-            "contact" : " John Smith\njohn.smith@customerbank.com\n111-222-333\n444-555-666",
-            "office" : "CustomerBank\n1, Sample address str.\nHo Chi Minh City\nVietnam"
+            "contact" : "Dennis Hussey\ndennis.hussey@citi.com\n84-835-521-1240\n84-838-824-2267",
+            "office" : "Citibank N.A. Vietnam\n115 Nguyen Hue Blvd.,15th Floor\nDistrict 1, Ho Chi Minh City\nVietnam"
         }
         ]
         
@@ -3847,7 +3857,7 @@ Routing page questions
 
             "com.citi.ddi.omc.routing.rest.api.QuestionnaireResponse",
             {
-                "value": "Markets",
+                "value": "ICG Markets",
                 "questionCode": "Q1",
                 "questionText": "Which business or service area am I part of?",
                 "questionType": "DROPDOWN",
@@ -3858,8 +3868,8 @@ Routing page questions
                         [
                             "com.citi.cop.routing.core.model.DynamicLookup$LookupResult",
                             {
-                                "name": "Banking",
-                                "displayName": "Banking",
+                                "name": "ICG Banking",
+                                "displayName": "ICG Banking",
                                 "extensions": [
                                     "java.util.LinkedHashMap",
                                     {
@@ -3871,8 +3881,8 @@ Routing page questions
                         [
                             "com.citi.cop.routing.core.model.DynamicLookup$LookupResult",
                             {
-                                "name": "Treasury Solutions",
-                                "displayName": "Treasury Solutions",
+                                "name": "ICG Treasury and Trade Solutions",
+                                "displayName": "ICG Treasury and Trade Solutions",
                                 "extensions": [
                                     "java.util.LinkedHashMap",
                                     {
@@ -3884,8 +3894,8 @@ Routing page questions
                         [
                             "com.citi.cop.routing.core.model.DynamicLookup$LookupResult",
                             {
-                                "name": "Markets",
-                                "displayName": "Markets",
+                                "name": "ICG Markets",
+                                "displayName": "ICG Markets",
                                 "extensions": [
                                     "java.util.LinkedHashMap",
                                     { }
@@ -3908,7 +3918,7 @@ Routing page questions
 
             "com.citi.ddi.omc.routing.rest.api.QuestionnaireResponse",
             {
-                "value": "Markets",
+                "value": "ICG Markets",
                 "questionCode": "Q1",
                 "questionText": "Which business or service area am I part of?",
                 "questionType": "QUESTIONWITHSEARCH",
@@ -3919,8 +3929,8 @@ Routing page questions
                         [
                             "com.citi.cop.routing.core.model.DynamicLookup$LookupResult",
                             {
-                                "name": "Banking1",
-                                "displayName": "Banking",
+                                "name": "ICG Banking1",
+                                "displayName": "ICG Banking",
                                 "extensions": [
                                     "java.util.LinkedHashMap",
                                     {
@@ -3932,8 +3942,8 @@ Routing page questions
                         [
                             "com.citi.cop.routing.core.model.DynamicLookup$LookupResult",
                             {
-                                "name": "Treasury Solutions",
-                                "displayName": "Treasury Solutions1",
+                                "name": "ICG Treasury and Trade Solutions",
+                                "displayName": "ICG Treasury and Trade Solutions1",
                                 "extensions": [
                                     "java.util.LinkedHashMap",
                                     {
@@ -3945,8 +3955,8 @@ Routing page questions
                         [
                             "com.citi.cop.routing.core.model.DynamicLookup$LookupResult",
                             {
-                                "name": "Markets",
-                                "displayName": "Markets1",
+                                "name": "ICG Markets",
+                                "displayName": "ICG Markets1",
                                 "extensions": [
                                     "java.util.LinkedHashMap",
                                     { }
@@ -3965,6 +3975,6 @@ Routing page Header
 + Response 200 (application/json)
 
         {
-            "value" : "Welcome to the new entry point for Client Onboarding and Account Services. From here you can quickly and easily navigate the organization and raise requests for Client Onboarding, Account Opening, Account Maintenance and Closure. Over time this portal will evolve to track status and provide progress on your requests. If you have any questions please do not hesitate to contact the group."
+            "value" : "Welcome to the new entry point for ICG Client Onboarding and Account Services. From here you can quickly and easily navigate the organization and raise requests for Client Onboarding, Account Opening, Account Maintenance and Closure. Over time this portal will evolve to track status and provide progress on your reuests. If you have any questions please do not hesitate to contact the group."
         }
         
